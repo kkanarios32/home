@@ -1,0 +1,10 @@
+\date{2024-10-29}
+\title{Daily Log}
+\p{Here I will try to write daily thoughts and progress in the spirit of [[richardsutton]]'s research notebook}
+
+\put\transclude/toc{false}
+\put\transclude/numbered{false}
+\put\transclude/metadata{true}
+\put\transclude/expanded{false}
+
+\transclude{log-0001}

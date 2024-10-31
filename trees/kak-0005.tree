@@ -1,0 +1,5 @@
+\date{2024-10-29}
+\title{Contrastive Reinforcement Learning}
+\author{kellenkanarios}
+
+\p{Prior to extending this to the continual setting, I wanted to better understand how everything works and the relations to traditional contrastive learning.}
