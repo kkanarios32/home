@@ -2,5 +2,5 @@
 trees = ["trees" ]                   # The directories in which your trees are stored
 assets = ["assets"]                  # The directories in which your assets are stored
 theme = "theme"                      # The directory in which your theme is stored
-prefixes = ["kak", "sutt", "nan"]
+prefixes = ["kak", "log"]
 root = "kak-0001"

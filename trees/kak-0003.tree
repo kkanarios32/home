@@ -5,10 +5,12 @@
 
 \p{Here I will maintain notes on various courses / self-study pursuits I undergo throughout my PhD.}
 
+
 \put\transclude/toc{false}
 \put\transclude/numbered{false}
 \put\transclude/metadata{true}
 \put\transclude/expanded{false}
+
 
 \transclude{kak-0007}
 \transclude{kak-0008}

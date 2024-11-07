@@ -45,6 +45,44 @@
  }
 }
 
+\def\block[tit][body]{%
+    \subtree{%
+      \title{\tit}
+      \body
+    }
+}
+
+\def\question[body]{%
+    \subtree{%
+      \taxon{question}
+      \body
+    }
+}
+
+\def\problem[body]{%
+    \subtree{%
+      \taxon{problem}
+      \body
+    }
+}
+
+\def\section[tit][body]{
+  \scope{
+    \put\transclude/toc{false}
+    \subtree{
+      \title{\tit}
+      \body
+    }
+  }
+}
+
+\def\note[name][body]{
+    \title{\name}
+    \body
+}
+
+\def\card[taxa][name][body]{\taxon{\taxa}\note{\name}{\body}}
+
 \def\solution[body]{
  \scope{
    \put\transclude/toc{false}

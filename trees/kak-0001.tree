@@ -24,5 +24,6 @@
   \put\transclude/expanded{false}
   \transclude{kak-0002}
   \transclude{kak-0003}
+  \transclude{kak-000H}
   \transclude{kak-0004}
 }

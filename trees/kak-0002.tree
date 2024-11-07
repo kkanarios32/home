@@ -3,7 +3,7 @@
 \author{kellenkanarios}
 \tag{top}
 
-\p{This is my blog, in which I write about a variety of topics including computer science, mathematics, and the design of tools for scientists.}
+\p{This is my blog, in which I write about a variety of topics including computer science, mathematics, and more.}
 
 \put\transclude/toc{false}
 \put\transclude/numbered{false}
@@ -12,3 +12,4 @@
 
 \transclude{kak-0005}
 \transclude{kak-0006}
+\transclude{kak-000A}

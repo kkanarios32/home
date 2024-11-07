@@ -2,6 +2,7 @@
  \startverb
  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
  \usepackage{amsfonts}
+ \usepackage{graphicx}
  \usetikzlibrary{matrix,arrows}
  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
  \usetikzlibrary{decorations.pathreplacing}
@@ -14,54 +15,54 @@
    pullback/.style = {
      append after command={
        \pgfextra{
-         \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
+         \draw (#{(\tikzlastnode) + (.2cm,-.5cm)}) -- ++(0.3cm,0) -- ++(0,0.3cm);
        }
      }
    },
    pullback 45/.style = {
      append after command={
        \pgfextra{
-         \draw[rotate = 45] ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
+         \draw[rotate = 45] (#{(\tikzlastnode) + (.2cm,-.5cm)}) -- ++(0.3cm,0) -- ++(0,0.3cm);
        }
      }
    },
    ne pullback/.style = {
      append after command={
        \pgfextra{
-         \draw ($(\tikzlastnode) + (-.2cm,-.5cm)$) -- ++(-0.3cm,0) -- ++(0,0.3cm);
+         \draw (#{(\tikzlastnode) + (-.2cm,-.5cm)}) -- ++(-0.3cm,0) -- ++(0,0.3cm);
        }
      }
    },
    sw pullback/.style = {
      append after command={
        \pgfextra{
-         \draw ($(\tikzlastnode) + (.2cm,.5cm)$) -- ++(0.3cm,0) -- ++(0,-0.3cm);
+         \draw (#{(\tikzlastnode) + (.2cm,.5cm)}) -- ++(0.3cm,0) -- ++(0,-0.3cm);
        }
      }
    },
    dotted pullback/.style = {
      append after command={
        \pgfextra{
-         \draw [densely dotted] ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
+         \draw [densely dotted] (#{(\tikzlastnode) + (.2cm,-.5cm)}) -- ++(0.3cm,0) -- ++(0,0.3cm);
        }
      }
    },
    muted pullback/.style = {
      append after command={
        \pgfextra{
-         \draw [gray] ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
+         \draw [gray] (#{(\tikzlastnode) + (.2cm,-.5cm)}) -- ++(0.3cm,0) -- ++(0,0.3cm);
        }
      }
    },
    pushout/.style = {
      append after command={
        \pgfextra{
-         \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
+         \draw (#{(\tikzlastnode) + (-.2cm,.5cm)}) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
        }
      }
    },
    between/.style args={#1 and #2}{
-     at = ($(#1)!0.5!(#2)$)
+     at = (#{(#1)!0.5!(#2)})
    },
    diagram/.style = {
      on grid,
@@ -212,21 +213,21 @@
    \group_begin:
    \keys_set:nn {jon-tikz/diagram} {#2}
    \bool_if:nTF \l_jon_glue_west {
-     \node (#1ne) [right = \l_jon_tikz_diagram_width~of~\l_jon_tikz_glue_target ne,square/ne] {$\l_jon_tikz_diagram_ne$};
-     \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
-     \draw[square/north] (\l_jon_tikz_glue_target ne) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
-     \draw[square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
-     \draw[square/south] (\l_jon_tikz_glue_target se) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
+     \node (#1ne) [right = \l_jon_tikz_diagram_width~of~\l_jon_tikz_glue_target ne,square/ne] {#{\l_jon_tikz_diagram_ne}};
+     \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {#{\l_jon_tikz_diagram_se}};
+     \draw[square/north] (\l_jon_tikz_glue_target ne) to node [square/north/node] {#{\l_jon_tikz_diagram_north}} (#1ne);
+     \draw[square/east] (#1ne) to node [square/east/node] {#{\l_jon_tikz_diagram_east}} (#1se);
+     \draw[square/south] (\l_jon_tikz_glue_target se) to node [square/south/node] {#{\l_jon_tikz_diagram_south}} (#1se);
    } {
-     \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
-     \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
-     \draw[square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
+     \node (#1nw) [square/nw] {#{\l_jon_tikz_diagram_nw}};
+     \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {#{\l_jon_tikz_diagram_sw}};
+     \draw[square/west] (#1nw) to node [square/west/node] {#{\l_jon_tikz_diagram_west}} (#1sw);
 
-     \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
-     \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
-     \draw[square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
-     \draw[square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
-     \draw[square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
+     \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {#{\l_jon_tikz_diagram_ne}};
+     \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {#{\l_jon_tikz_diagram_se}};
+     \draw[square/north] (#1nw) to node [square/north/node] {#{\l_jon_tikz_diagram_north}} (#1ne);
+     \draw[square/east] (#1ne) to node [square/east/node] {#{\l_jon_tikz_diagram_east}} (#1se);
+     \draw[square/south] (#1sw) to node [square/south/node] {#{\l_jon_tikz_diagram_south}} (#1se);
    }
    \group_end:
  }
