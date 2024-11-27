@@ -3,7 +3,7 @@
 \title{Notes}
 \tag{top}
 
-\p{Here I will maintain notes on various courses / self-study pursuits I undergo throughout my PhD.}
+\p{This will be home to my more structured notes. Typically, these will follow a course or textbook unlike the notes found in [[kak-0015]].}
 
 
 \put\transclude/toc{false}
@@ -13,4 +13,4 @@
 
 
 \transclude{kak-0007}
-\transclude{kak-0008}
+\transclude{kak-0012}

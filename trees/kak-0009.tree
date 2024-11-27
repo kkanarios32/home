@@ -10,7 +10,7 @@ As an explicit example, we will use logistic regression. Namely, we will model #
 }
 \transclude{kak-000E}
 
-\p{In [[vandenOord2018]], they show under mild conditions that the estimator #{p_{\theta}(x \mid D) \to p_{\mathcal{D}}(x)} in probability as the number of samples in the loss goes to infinity. Equivalently, the estimator is [consistent](kak-000F).}
+\p{In [[gutmann2012]], they show under mild conditions that the estimator #{p_{\theta}(x \mid D) \to p_{\mathcal{D}}(x)} in probability as the number of samples in the loss goes to infinity. Equivalently, the estimator is [consistent](kak-000F).}
 
 \p{\strong{Time series:} Before we get to contrastive RL, it is a natural question to wonder how does this apply to temporal sequences? Concretely, we want to make predictions about the future given the current "context". However, we want to do so in an unsupervised way, meaning we are only given trajectories not a notion of what it means for a trajectory to be good. Naively, one can try to do this in a supervised manner. For a #{k} step prediction, this would just be your model predicting what will happen in #{k} steps then seeing if it matches what occured #{k} steps in the future in the sample trajectory. However, if your sample space #{\mathcal{X}} is very high-dimensional, modeling this relationship can require an exorbinant amount of trajectories.}
 

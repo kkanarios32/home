@@ -1,5 +1,6 @@
 \title{Constrastive Learning as Goal Conditioned Reinforcement Learning}
 \taxon{reference}
+\tag{potw}
 \meta{abstract}{
 In reinforcement learning (RL), it is easier to solve a task if
               given a good representation. While deep RL should automatically

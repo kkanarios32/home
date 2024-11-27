@@ -1,6 +1,7 @@
 \title{Contrastive Difference Predictive Coding}
 \taxon{reference}
 \tag{contrastive}
+\tag{potw}
 \meta{bibtex}\verb<<<|
 @misc{zheng2024contrastivedifferencepredictivecoding,
       title={Contrastive Difference Predictive Coding}, 

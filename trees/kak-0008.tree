@@ -5,58 +5,7 @@
 \tag{top}
 \tag{note}
 
-\p{For these notes, I will be simultaneously learning RL Theory through [RL Theory Book](https://rltheorybook.github.io/) and the [[richardsutton]] flavor of RL through his [CMPUT 609](https://drive.google.com/drive/folders/0B3w765rOKuKANmxNbXdwaE1YU1k?resourcekey=0-JZz-noRuJgogNsg1ljgV8w) course.}
+\p{For these notes, I will be simultaneously learning RL Theory through [[jiang2024]] and the} 
 
-\section{Review Question}{
-  \problem{Review the methods discussed in the first part of the book. What are their strengths and weaknesses? When should they be used?}
-  \nowrap{
-    \solution{
-      \table{
-        \tr{
-          \td{}
-          \td{\strong{Strength}}
-          \td{\strong{Weakness}}
-          \td{\strong{Use case}}
-        }
-        \tr{
-          \td{\strong{Bandits}}
-          \td{Simplest case. Can isolate exploration problem.}
-          \td{No credit assignment. Action only effect next timestep.}
-          \td{Clinical trials. Things without temporally extended outcomes.}
-        }
-        \tr{
-          \td{\strong{Dynamic Programming}}
-          \td{Exact solution.}
-          \td{Complexity blows up with state and action space. Model-based.}
-          \td{Tabular MDPs.}
-        }
-        \tr{
-          \td{\strong{Monte Carlo}}
-          \td{Unbiased estimator. Model-free.}
-          \td{Extremely high variance. Must wait till end of episode.}
-          \td{When interacting with environment is inexpensive, episode length is short.}
-        }
-        \tr{
-          \td{\strong{TD methods}}
-          \td{Model-free. Online.}
-          \td{Biased estimator.}
-          \td{Environment interaction is cheap but also episode length is long or continuing.}
-        }
-        \tr{
-          \td{\strong{N step}}
-          \td{Balance bias-variance tradeoff.}
-          \td{Must choose #{n}.}
-          \td{Lower variance continuing environments?}
-        }
-        \tr{
-          \td{\strong{Dyna}}
-          \td{Sample efficiency.}
-          \td{Model-based.}
-          \td{When interacting with environment is costly i.e. driving.}
-        }
-      }
-    }
-  }
-}
 
-\transclude{kak-000G}
+\transclude{kak-000X}

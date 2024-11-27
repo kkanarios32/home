@@ -1,19 +1,24 @@
 \date{2024-10-29}
-\title{Daily Log}
-\p{Here I will try to write daily thoughts and progress in the spirit of [[richardsutton]]'s research notebook. Here, I will also dump things that have no other place. Most likely, if you are visiting this site then this log will not be of interest to you. Roughly, I intend to allocate my time as follows:}
-
-\p{Each day (amortized),}
-\ul{
-  \li{Self-study from textbook/course list and review anki ~2hr.}
-  \li{Progress on selected research/coursework ~5-6hrs.}
-  \li{Read and review paper of the week ~1hr.}
-  \li{Miscellanous fiddling with this website / blog posts ~1hr.}
-}
+\title{/dev/null}
+\p{Here, I will also dump things that have no other place. Most likely, if you are visiting this site then this log will not be of interest to you.}
 
 \put\transclude/toc{false}
 \put\transclude/numbered{false}
 \put\transclude/metadata{true}
 \put\transclude/expanded{false}
 
-\transclude{log-0001}
-\transclude{log-0002}
+
+\transclude{log-0008}
+
+\transclude{kak-0015}
+
+\subtree{
+  \title{Papers of a Week}
+  \p{I am committing to reading (fairly rigorously) one paper a week. Here I will accumulate my notes and thoughts on each of these papers as I go.}
+  \query{
+    \open\query
+    \isect{\taxon{reference}}{
+    \tag{potw}
+    }
+  }
+}

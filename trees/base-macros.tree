@@ -1,11 +1,57 @@
 \title{basic macros}
-
 \import{latex-preamble}
 
 \xmlns:html{http://www.w3.org/1999/xhtml}
 
 \def\nowrap[body]{\<html:span>[style]{white-space: nowrap}{\body}}
 \def\mark[body]{\<html:mark>{\body}}
+
+
+\def\collapsed[t][body]{
+ \scope{
+    \put\transclude/toc{false}
+    \put\transclude/expanded{false}
+    \subtree{
+      \title{\t}
+      \body
+   }
+ }
+}
+
+\def\citek[refid]{\let\escape[x]{\x}\<html:span>[class]{link-reference}{[\escape{[\refid]}](\refid)}}
+
+\def\citet[tid][refid]{\let\escape[x]{\x}\<html:span>[class]{link-reference}[tid]{\tid}[refid]{\refid}{[\escape{[\refid, \tid]}](\refid)}}
+
+\def\note[name][body]{
+    \title{\name}
+    \body
+}
+
+
+\def\refnote[name][reference][body]{
+  \note{\name \citek{\reference}}{\body}
+}
+
+\def\refnotet[name][tid][reference][body]{%
+  \title{\name \citet{\tid}{\reference}}
+  \body
+}
+
+\def\refcard[taxa][name][reference][body]{\subtree{\taxon{\taxa}\refnote{\name}{\reference}{\body}}}
+
+\def\refcardt[taxa][name][tid][reference][body]{
+  \scope{
+    \put\transclude/toc{false}
+    \put\transclude/numbered{false}
+    \subtree{
+      \taxon{\taxa}\refnotet{\name}{\tid}{\reference}{\body}
+    }
+  }
+}
+
+\def\embed[src]{
+  \<html:embed>[type]{text/html}[src]{\src}{}
+}
 
 \def\table[body]{
   \<html:table>{\body}
@@ -35,10 +81,20 @@
  }
 }
 
-\def\proof[body]{
+\def\example[body]{%
  \scope{
    \put\transclude/toc{false}
-   \subtree{
+   \subtree{%
+     \taxon{example}
+     \body
+   }
+ }
+}
+
+\def\proof[body]{%
+ \scope{
+   \put\transclude/toc{false}
+   \subtree{%
      \taxon{proof}
      \body
    }
@@ -52,14 +108,32 @@
     }
 }
 
+\def\remark[body]{%
+    \put\transclude/toc{false}
+    \subtree{%
+      \taxon{remark}
+      \body
+    }
+}
+
 \def\question[body]{%
+    \put\transclude/toc{false}
     \subtree{%
       \taxon{question}
       \body
     }
 }
 
+\def\answer[body]{%
+    \put\transclude/toc{false}
+    \subtree{%
+      \taxon{answer}
+      \body
+    }
+}
+
 \def\problem[body]{%
+    \put\transclude/toc{false}
     \subtree{%
       \taxon{problem}
       \body
@@ -68,7 +142,6 @@
 
 \def\section[tit][body]{
   \scope{
-    \put\transclude/toc{false}
     \subtree{
       \title{\tit}
       \body
@@ -76,12 +149,7 @@
   }
 }
 
-\def\note[name][body]{
-    \title{\name}
-    \body
-}
-
-\def\card[taxa][name][body]{\taxon{\taxa}\note{\name}{\body}}
+\def\card[taxa][name][body]{\subtree{\taxon{\taxa}\note{\name}{\body}}}
 
 \def\solution[body]{
  \scope{

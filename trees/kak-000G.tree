@@ -1,3 +1,53 @@
 \date{2024-11-05}
 \title{On-policy Prediction with Approximation}
+\import{base-macros}
 
+\p{
+In my opinion, the most important part of this chapter is now that when we update say a #{Q} function for a specific state action pair #{(s,a)}, then this update can affect the value of the #{Q(s', a')} due to the reuse of the internal parameters. The most explicit example of this is the following (this may be an exercise later?):
+  }
+
+\transclude{kak-0013}
+
+\refcardt{exercise}{}{9.1}{sutton2022}{
+  \p{Show that tabular methods are a special case of linear function approximation. What would the feature vectors be?}
+}
+
+\solution{
+\p{As a linear function approximation method, we have two quantities #{\boldsymbol{w}} and #{\boldsymbol{x}(s)}. We make the update
+##{w_{t + 1} = w_{t} + \alpha(r_t + \gamma w_{t}^{\top} x_{t+1} - w_t^{\top} x_t) x_t}
+In the tabular setting, we just assume that we have the capacity to represent every possible state. This means that #{x(s) \in \mathbb{R}^{|S|}}. Therefore, if we define the features as #{x : s_i \mapsto \boldsymbol{e}_i} then we can recover policy evaluation by taking,
+##{r_i = \mathbb{E}_{a \sim \pi, s \sim p}[r(s_i)], \quad w_i = v_{\pi}(s_i)}
+}
+Substituting, we get 
+##{
+##{w_{t + 1} = w_{t} + \alpha(\mathbb{E}_{a \sim \pi, s \sim p}[r(s_i)] + v(s_{t + 1}) - v(s_{t})) \cdot \boldsymbol{e}_i}
+}
+Since #{\boldsymbol{w}} is our vector of values, updating the #{i}th entry is exactly performing exactly one update to #{v_{\pi}(s_i)} in the tabular setting.
+}
+
+\refcardt{exercise}{}{9.2}{sutton2022}{
+  \p{Why does (9.17) define #{(n + 1)^k} distinct features for dimension k? }
+}
+\solution{
+  \p{For each #{s_j}, there are #{n + 1} options for #{c_{i, j}}. Since there are #{k}, #{s_{j}}'s, there are #{(n + 1)^k} total possible features for #{x_i}.}
+}
+
+
+\refcardt{exercise}{}{9.3}{sutton2022}{
+\p{What #{n} and #{c_{i,j}} produce the feature vectors ##{\mathbf{x}(s)=(1,s_{1},s_{2},s_{1}s_{2},s_{1}^{2},s_{2}^{2},s_{1}^{2}s_{2}^{2},s_{1}s_{2}^{2},s_{1}^{2}s_{2}^{2})^{\top}?}
+}
+}
+\solution{
+  \p{#{n = 2} and #{c_{ij}} as 
+##{\boldsymbol{c_0} = [0, 0], \quad
+  \boldsymbol{c_1} = [1, 0] \\
+  \boldsymbol{c_2} = [0, 1], \quad
+  \boldsymbol{c_3} = [1, 1] \\
+  \boldsymbol{c_4} = [2, 0], \quad
+  \boldsymbol{c_5} = [0, 2] \\
+  \boldsymbol{c_6} = [2, 2], \quad
+  \boldsymbol{c_7} = [1, 2], \quad
+  \boldsymbol{c_8} = [2, 2]
+  }
+  }
+}
