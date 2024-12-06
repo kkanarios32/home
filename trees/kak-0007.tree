@@ -91,7 +91,7 @@ Now take #{C_n = \bigcup_{k} B_{nk}}, so that #{\bigcup_{n} A_n \subset \bigcup_
       }
       From this, our only restriction is that #{P^*(A) = P(A)} for #{A \in \mathscr{F}_0}. Therefore, uniqueness here means that if #{P^*(A) = Q(A)} for some #{Q} and every #{A \in \mathscr{F}_0}. Then #{P^*(A) = Q(A)} for every #{A \in \sigma(\mathscr{F}_0)}.
     }
-}
+
 \transclude{kak-0018}
 \transclude{kak-0019}
 \p{I was a bit unsure that a [[kak-0019]] is not a [[kak-000O]], but the author provided an example that I will walk through to understand the distinction }
@@ -125,3 +125,43 @@ Consider a four point space #{\Omega = \{x_1, x_2, x_3, x_4\}}. We can define a 
 \p{You might be wondering when this is not the case because we have subadditivity. However, it is not the case that #{P(A) > 0} but instead that #{A} is not measurable. As an example,}
 
 \transclude{kak-001G}
+
+\refcardt{exercise}{}{3.2}{billingsley1986}{
+  Let #{P} be a probability measure on a field #{\mathscr{F}_{0}} and for every subset #{A} of #{\Omega} define #{P^{\star}(A)} by [(3.1)](kak-000T). Denote also by #{P} the extension of #{P} to #{\mathscr{F}=\sigma(\mathscr{F}_{0})}.
+  \ol{
+      \li{Show that #{A} is [[kak-000U]] if and only if #{P^*(A) = P_*(A)}.}
+    }
+}
+\solution{
+  \p{First suppose that #{P^*(A) = P_*(A)}. Let #{E \subset \Omega}. We must show that 
+##{P^*(E \cap A) + P^*(E \cap A^c) = P^*(E)}
+  From part (1) and our hypothesis, #{\exists \overline{A}, \underline{A} \in \mathscr{F}} such that #{\underline{A} \subset A \subset \overline{A}} and ##{P(\overline{A}) = P^*(A) = P_*(A) = P(\underline{A})}. Additionally, #{\exists B \in \mathscr{F}} such that #{E \subset B} and #{P^*(E) = P(B)}. Then we have that
+##{P^*(E \cap A) \leq P^*(B \cap \overline{A}) = P(B \cap \overline{A})}
+  and
+##{P^*(B \cap A) \leq P^*(B \cap \underline{A}^c) = P(B \cap \underline{A}^c)}
+  Thus,
+##{P^*(E \cap A) + P^*(E \cap A^c) \leq P(B \cap \underline{A}^c) + P(B \cap \overline{A}) = P^*(E)}
+  as desired.
+  }
+}
+
+\remark{I really struggled for a minute on even understanding this problem. The import thing to understand for this problem is what space everything is defined on.
+\ol{
+    \li{#{P} is defined on the initial field #{\mathscr{F}_0}, which is the closure over finite unions and complements of #{\Omega}.}
+    \li{#{P^*} is defined on the powerset #{\mathcal{P}(\Omega)}. #{P^*} is \strong{NOT} necessarily a measure on all of these subsets though.
+    \ul{
+        \li{#{E} is \strong{NOT} necessarily in #{\mathscr{F}} hence the need for #{B}.}
+      }
+    }
+    \li{#{P} (abuse of notation) is #{P^*} restricted to the [[kak-000U]] subsets of #{\Omega}.}
+  }
+  Common question is why we cannot just apply finite additivity and have everything [[kak-000U]]? The answer is that #{P^*} is not countably subadditive on #{\mathcal{P}(\Omega)} but only the [[kak-000U]] sets.
+}
+}
+
+\section{Denumerable Probabilities}{
+The results of this section concern infinite sequences of events in a probability space. They will be illustrated by examples in the unit interval. By this will always be meant the triple (#{\Omega}, #{\mathscr{F}}, #{P}) for which #{\Omega} is (0,1), #{\mathscr{F}} is the #{\sigma}-field #{\mathscr{B}} of Borel sets there, and #{P(A)} is for #{A} in #{\mathscr{F}} the Lebesgue measure #{\lambda(A)} of #{A}. 
+\transclude{kak-001J}
+\transclude{kak-001I}
+\transclude{kak-001K}
+}

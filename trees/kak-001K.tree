@@ -1,0 +1,7 @@
+\date{2024-12-02}
+\taxon{theorem}
+\p{
+For each sequence #{\{A_{n}\}},
+
+##{P\left(\lim\inf_{n}A_{n}\right)\leq\lim_{n}\inf_{n}P\left(\,A_{n}\right) \leq\lim_{n}\sup_{n}P\left(\,A_{n}\right)\leq P\left(\lim_{n}\sup_{n}A_{n}\right).}
+}
