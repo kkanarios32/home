@@ -1,14 +1,12 @@
 \date{2024-10-29}
-\title{/dev/null}
-\p{Here, I will also dump things that have no other place. Most likely, if you are visiting this site then this log will not be of interest to you.}
+\title{Disk}
+\p{Here are past things of interest that may be of interest in the future. Unfortunately, they are no longer "hot" and have been paged out lol.}
 
 \put\transclude/toc{false}
 \put\transclude/numbered{false}
 \put\transclude/metadata{true}
 \put\transclude/expanded{false}
 
-
-\transclude{log-0008}
 
 \transclude{kak-0015}
 

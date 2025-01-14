@@ -1,6 +1,6 @@
 \date{2024-10-29}
 \author{kellenkanarios}
-\title{Notes}
+\title{Learning}
 \tag{top}
 
 \p{This will be home to my more structured notes. Typically, these will follow a course or textbook unlike the notes found in [[kak-0015]].}
@@ -12,5 +12,13 @@
 \put\transclude/expanded{false}
 
 
-\transclude{kak-0007}
-\transclude{kak-0012}
+\transclude{kak-0028}
+\transclude{kak-0027}
+\put\transclude/expanded{false}
+\subtree{
+\title{Systems Programming}
+\query{
+  \open\query
+  \isect{\tag{systems}}
+}
+}

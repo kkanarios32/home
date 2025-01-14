@@ -1,6 +1,6 @@
 \date{2024-10-30}
 \author{kellenkanarios}
-\title{Probability Theory Notes}
+\title{Notes on [[billingsley1986]]}
 \import{base-macros}
 \tag{top}
 \tag{note}
@@ -163,5 +163,80 @@ Consider a four point space #{\Omega = \{x_1, x_2, x_3, x_4\}}. We can define a 
 The results of this section concern infinite sequences of events in a probability space. They will be illustrated by examples in the unit interval. By this will always be meant the triple (#{\Omega}, #{\mathscr{F}}, #{P}) for which #{\Omega} is (0,1), #{\mathscr{F}} is the #{\sigma}-field #{\mathscr{B}} of Borel sets there, and #{P(A)} is for #{A} in #{\mathscr{F}} the Lebesgue measure #{\lambda(A)} of #{A}. 
 \transclude{kak-001J}
 \transclude{kak-001I}
+\transclude{kak-001M}
+\transclude{kak-001N}
 \transclude{kak-001K}
+\transclude{kak-001O}
+\transclude{kak-001P}
+\p{\strong{Meaning in english:} In the book, they give the example of even and odd numbered coin tosses. We want to know when a new event only depends on even or odd coin tosses. Concretely, we know that even and odd coin tosses are independent, and we want to know if, for example, the outcome of every fourth coin toss is independent of odd tosses. We can do this rigorously by showing that this event is in the #{\sigma}-algebra of even coin tosses. Then by [Theorem 5.7](kak-001P), we know that this event is also independent of odd coin tosses.}
+\transclude{kak-001R}
+\section{Subfields}{
+\remark{Intuition of subfields are spaces with partial information. My best
+memory of this coming up in probability was conditional expectation.
+Esssentially, we need to consider the subfield of events conditioned on some
+event that already occured.}
+\transclude{kak-001S}
+\p{From this definition, we can conclude an observer with the information of
+#{\sigma(\mathscr{A})} has only the information of the equivalence class but
+cannot identify a specific point from this class.}
 }
+\section{The Borel-Cantelli Lemmas}{
+    \transclude{kak-001Q}
+    \transclude{kak-001T}
+}
+\section{Zero-one Law}{
+\transclude{kak-001U}
+\example{The #{\lim\sup_n A_n} and #{\lim\inf_n A_n} are both tail events.}
+  }
+  \transclude{kak-001V}
+}
+
+\section{Random Variables}{
+  \transclude{kak-001W}
+  \example{
+    Consider the function 
+    ##{X = \sum_{i} x_i I_{A_i}}
+    If #{A_i} are finite partition of #{\Omega} into #{\mathscr{F}}-sets, then inverse image is at most countable union of the A_i's, which is an #{\mathscr{F}}-set. Therefore, this function is measurable.
+  }
+  \transclude{kak-0022}
+  \transclude{kak-001X}
+  \section{Convergence of Random Variables}{
+In probability, rather than standard convergence, we actually can consider convergence with high probability or almost surely (should come up later). Formally, we care about measuring the probability of the event #{\{\omega \mid \lim_n X_n(\omega) \to X(\omega)\}}. The first question we must ask is whether this set is measurable. They do not really cover this in the textbook, but it is an important trick that comes up a lot.
+\proof{
+We consider the complement. Note that the sequence of random variables not converging can be written as #{\forall \epsilon, \exists n} such that #{|X_n(\omega) - X(\omega)| \geq \epsilon}. For a fixed #{\epsilon}, this is the #{\lim\sup} of the sequence #{A_n \coloneqq [|X_n - X| \geq \epsilon]}. We know that #{\lim\sup} of measurable sequence is measurable because it is a countable intersection of countable unions. Therefore, the last thing we need is to show for all #{\epsilon}. This can be done just using rationals because #{\mathbb{Q}} is [dense](kak-001Y) in #{\mathbb{R}}. Then we have a countable union of countable sets as desired.
+  }
+    \transclude{kak-001Z}
+    \transclude{kak-0020}
+    \remark{
+        By [Theorem 5.5](kak-001K), almost sure convergence #{\implies} convergence in probability. Converse is NOT true.
+      }
+      \example{Can make array of rows, where the #{n}th row consists of #{n} intervals that evenly divide #{[0,1]}. Then #{P(A_n) \to 0} but #{[A_n \text{ i.o}] = [0,1]} }
+    }
+    \section{Independence}{
+        \transclude{kak-0021}
+      }
+    \section{Existence of Independent Sequences}{
+        \transclude{kak-0023}
+        \transclude{kak-0024}
+\p{\strong{Guess for english translation}: I think what this is saying is that rather than try to define a probability space for a random variable, we can instead just pick probability measures and know that the [[kak-001W]] come for free? i.e. (from the book) we can just define a trivial space #{\Omega = \{1, 0\}} and probability measure #{P(1) = p}, #{P(0) = 1 - p} and know that we can get a Bernoulli random variable? In this case #{X(1) = 1}, #{X(0) = 0} such that #{P(X = 1) = p} and #{P(X = 0) = 1 - p}?}
+
+  \remark{In the text, they say that the underlying probability space does not really matter. Basically, all calculations are determined by the distribution in range space. So I guess that is also what this theorem is getting at? }
+  }
+
+  \section{Expected Value}{
+\transclude{kak-0029}
+\transclude{kak-002A}
+\transclude{kak-002B}
+\transclude{kak-002C}
+    }
+  \section{Inequalities}{
+    \transclude{kak-002E}
+    \transclude{kak-002F}
+\transclude{kak-002G}
+\transclude{kak-002H}
+    } 
+}
+
+\section{The Law of Large Numbers}{
+
+  }

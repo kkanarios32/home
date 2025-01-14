@@ -1,8 +1,8 @@
 \date{2024-11-20}
-\title{#{\sigma}-algebra}
+\title{#{\sigma}-field}
 \taxon{definition}
 
-\p{A class of subsets #{\mathscr{F}} of #{\Omega} is a #{\sigma}-algebra if the following holds
+\p{A class of subsets #{\mathscr{F}} of #{\Omega} is a #{\sigma}-field if the following holds
   \ol{
     \li{#{\Omega \in \mathscr{F}}}
     \li{If #{A \in \mathscr{F}} then #{A^c \in \mathscr{F}}}
