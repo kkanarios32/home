@@ -99,7 +99,10 @@
      \body
    }
  }
+
 }
+
+\def\md[body]{\<html:div>[class]{markdownit grace-loading}{\body}}
 
 \def\block[tit][body]{%
     \subtree{%
@@ -107,6 +110,8 @@
       \body
     }
 }
+
+\def\mdblock[t][body]{\block{\t}{\md{\body}}}
 
 \def\remark[body]{%
     \put\transclude/toc{false}

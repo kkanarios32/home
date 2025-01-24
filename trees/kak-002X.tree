@@ -1,0 +1,34 @@
+\date{2025-01-22}
+\title{Hierarchical Contrastive RL}
+\tag{project}
+\import{base-macros}
+\author{[[kellenkanarios]]}
+
+\subtree[resource]{
+  \title{Useful Resources}
+  \ul{
+    \li{[Accelerating Goal-Conditioned RL](https://github.com/MichalBortkiewicz/JaxGCRL)}
+    \li{[Achievement Distillation](https://github.com/snu-mllab/Achievement-Distillation)}
+  }
+}
+
+\subtree[ref]{
+  \title{Related Work}
+  \query{
+    \open\query
+    \isect{\taxon{reference}}{\union{\tag{contrastive}}{\tag{hierarchical}}}
+  }
+}
+
+\subtree[daily]{
+  \put\transclude/numbered{false}
+  \title{Daily Tracker}
+  \subtree[2025]{
+    \title{Year 2025}
+    \subtree[2025-01]{
+      \title{January, 2025}
+      \mdblock{01-24-25}{
+      }
+    }
+  }
+}

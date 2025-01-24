@@ -1,0 +1,34 @@
+\date{2025-01-22}
+\title{Continual / Streaming Successor Features}
+\tag{project}
+\import{base-macros}
+\author{[[kellenkanarios]]}
+
+\subtree[resource]{
+  \title{Useful Resources}
+  \ul{
+    \li{[Streaming DRL](https://github.com/mohmdelsayed/streaming-drl)}
+    \li{[Simple Successor Features](https://github.com/raymondchua/simple_successor_features)}
+  }
+}
+
+\subtree[ref]{
+  \title{Related Work}
+  \query{
+    \open\query
+    \isect{\taxon{reference}}{\union{\tag{continual}}{\tag{zeroshot}}}
+  }
+}
+
+\subtree[daily]{
+  \put\transclude/numbered{false}
+  \title{Daily Tracker}
+  \subtree[2025]{
+    \title{Year 2025}
+    \subtree[2025-01]{
+      \title{January, 2025}
+      \mdblock{01-24-25}{
+      }
+    }
+  }
+}

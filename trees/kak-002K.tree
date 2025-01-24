@@ -1,0 +1,10 @@
+\date{2025-01-15}
+\title{High Dimensional Probability}
+\tag{prob}
+\p{Here I will be keeping an informal summary of the long form PDF notes I take in MATH 710 High dimensional probability taught by Mark Rudelson. I will also add any important findings from the internet worth remembering as I inevitably struggle to understand the lectures.}
+
+\transclude{kak-002L}
+\transclude{kak-002M}
+\transclude{kak-002P}
+\transclude{kak-002N}
+\transclude{kak-002O}
