@@ -1,6 +1,6 @@
 \date{2024-10-29}
 \author{kellenkanarios}
-\title{Long Form Notes}
+\title{Notes}
 
 \p{This will be home to my more structured notes. Typically, these will follow a course or textbook unlike the notes found in [[kak-0015]].}
 
@@ -10,28 +10,8 @@
 \put\transclude/metadata{true}
 \put\transclude/expanded{false}
 
+\transclude{kak-0030}
 
-\subtree[rl]{
-\title{Reinforcement Learning}
-  \query{
-    \open\query
-    \isect{\tag{rl}\tag{long}}
-  }
-}
+\transclude{kak-0031}
 
-\subtree[prob]{
-\title{Probability}
-\query{
-  \open\query
-  \isect{\tag{prob}\tag{long}}
-}
-}
-
-\subtree[systems]{
-\title{Systems Programming}
-\put\transclude/expanded{true}
-\query{
-  \open\query
-  \isect{\tag{systems}
-}
-}
+\transclude{kak-0032}

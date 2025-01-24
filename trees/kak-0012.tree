@@ -2,6 +2,7 @@
 \import{base-macros}
 \title{Notes on [[sutton2022]]}
 \tag{rl}
+\tag{long}
 
 \p{This won't really be notes, I will mainly just store my thoughts and questions about each chapter along with solutions to selected exercises. Specifically, I will be learning the [[richardsutton]] flavor of RL through his [CMPUT 609](https://drive.google.com/drive/folders/0B3w765rOKuKANmxNbXdwaE1YU1k?resourcekey=0-JZz-noRuJgogNsg1ljgV8w) course. Due to this, I will try to follow his [recommended style of engagement](http://incompleteideas.net/rlai.cs.ualberta.ca/RLAI/RLAIcourse/researchdiary.html).}
 

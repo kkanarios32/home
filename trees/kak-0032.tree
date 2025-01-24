@@ -1,0 +1,11 @@
+\date{2025-01-24}
+\title{Systems Programming}
+
+\subtree[systems]{
+\title{Notes}
+\put\transclude/expanded{true}
+\query{
+  \open\query
+  \isect{\tag{systems}}{\tag{long}}
+}
+}

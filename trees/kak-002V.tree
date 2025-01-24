@@ -3,14 +3,14 @@
 \import{base-macros}
 \author{[[kellenkanarios]]}
 
-\subtree[resource]{
+\subtree{
   \title{Useful Resources}
   \ul{
     \li{[Accelerating Goal-Conditioned RL](https://github.com/MichalBortkiewicz/JaxGCRL)}
   }
 }
 
-\subtree[ref]{
+\subtree{
   \title{Related Work}
   \query{
     \open\query
@@ -18,12 +18,12 @@
   }
 }
 
-\subtree[daily]{
+\subtree{
   \put\transclude/numbered{false}
   \title{Daily Tracker}
-  \subtree[2025]{
+  \subtree{
     \title{Year 2025}
-    \subtree[2025-01]{
+    \subtree{
       \title{January, 2025}
       \mdblock{01-22-25}{
         \ul{

@@ -1,1 +1,10 @@
-\date{2025-01-23}
+\date{2025-01-24}
+\title{Reinforcement Learning}
+
+\subtree[rl]{
+  \title{Notes}
+  \query{
+    \open\query
+    \isect{\tag{rl}}{\tag{long}}
+  }
+}

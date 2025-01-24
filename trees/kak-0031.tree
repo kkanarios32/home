@@ -1,1 +1,10 @@
-\date{2025-01-23}
+\date{2025-01-24}
+\title{Probablity}
+
+\subtree[prob]{
+\title{Notes}
+\query{
+  \open\query
+  \isect{\tag{prob}}{\tag{long}}
+}
+}

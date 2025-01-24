@@ -4,7 +4,7 @@
 \import{base-macros}
 \author{[[kellenkanarios]]}
 
-\subtree[resource]{
+\subtree{
   \title{Useful Resources}
   \ul{
     \li{[Streaming DRL](https://github.com/mohmdelsayed/streaming-drl)}
@@ -12,7 +12,7 @@
   }
 }
 
-\subtree[ref]{
+\subtree{
   \title{Related Work}
   \query{
     \open\query
@@ -20,12 +20,12 @@
   }
 }
 
-\subtree[daily]{
+\subtree{
   \put\transclude/numbered{false}
   \title{Daily Tracker}
-  \subtree[2025]{
+  \subtree{
     \title{Year 2025}
-    \subtree[2025-01]{
+    \subtree{
       \title{January, 2025}
       \mdblock{01-24-25}{
       }
