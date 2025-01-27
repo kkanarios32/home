@@ -16,9 +16,12 @@
 \hr
 
 \put\transclude/numbered{false}
+\put\transclude/expanded{false}
 
-
-\query{
-  \open\query
-  \isect{\tag{daily}}
-}
+\transclude{log-0001}
+\transclude{log-0002}
+\transclude{log-0003}
+\transclude{log-0004}
+\transclude{log-0005}
+\transclude{log-0006}
+\transclude{log-0007}

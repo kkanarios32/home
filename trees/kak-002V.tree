@@ -26,9 +26,29 @@
     \subtree{
       \title{January, 2025}
       \mdblock{01-22-25}{
-        \ul{
-          \li{[[kak-002W]]}
+        \strong{Brax Notes}
+        \p{
+            \ul{
+                \li{Brax state has #{q}, #{q_d}, #{x}, #{x_d}}
+                \ul{
+                    \li{We care about #{x}, which is a [transform](https://github.com/google/brax/blob/d48b0b373a6478838eac325cadc6d8983837a968/brax/base.py#L171) that has attributes [\code{pos}, \code{rot}] that store [cartesian, quaternion] respectively.}
+                    \li{Axis 0 is the different objects defined by the xml file.}
+                    \li{We added target and obstacle as objects in the xml file (super hacky).}
+                  }
+                  \li{Specify \code{init_qpos} in xml file, which Brax then uses kinematics to translate to absolute position and fills \code{x.pos}. This is why we only have to set \code{q} [here](https://github.com/MichalBortkiewicz/JaxGCRL/blob/b54cd4cdc968a365f9113fed1822e7e774a113e9/envs/ant.py#L90) and reference \code{x.pos} later.}
+              }
+      }
+      }
+      \mdblock{01-27-25}{
+        From this [paper](https://arxiv.org/pdf/1911.09101), it seems like maybe linear combination is fine? Instead we want dual descent on lambda? Maximizing the #{Q - \lambda Q} is the same as the policy from their modified reward. Since our constraints / goal are not fixed, I was thinking of neural network approximate of lambda as a function of goal and constraint. Since the trajectories are technically off policy, might need to do something about (state, action) also?
+        Want to solve constrained optimization problem.
+        ##{
+        \begin{align*}
+\pi_{\phi}(s, a, g, g') = &\max_{\theta} Q_{\theta}(s, a, g) \\
+&\text{s.t.} \quad Q_{\theta}(s, a, g') \leq 0
+        \end{align*}
         }
+        Since in [[eysenbach2023]] they get away with "off-policy" #{Q} function for DDPG, I think it is good enough to start with #{\lambda_{\phi}(g, g')}.
       }
     }
   }

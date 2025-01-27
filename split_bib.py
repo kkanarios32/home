@@ -76,6 +76,14 @@ def format_author(author):
     else:
         return ''
 
+
+def get_author(reference):
+    if 'author' in reference.keys():
+        return ''.join(
+            [f'\\author{{{format_author(author)}}}' for author in reference['author']]),
+    else:
+        return ""
+
 # format a number with leading zeros
 
 
@@ -84,7 +92,11 @@ def format_number(number, length=2):
     return format_string.format(number)
 
 
-def format_date(date_parts):
+def format_date(reference):
+    if 'issued' in reference.keys():
+        date_parts = reference['issued']['date-parts'][0]
+    else:
+        return ""
     return '-'.join([format_number(part) for part in date_parts])
 
 
@@ -168,14 +180,15 @@ for i, reference in enumerate(references):
         #  {tree_file_i.relative_to(project_root)}:
         print(f'🟡 {bib_filenames_i}')
 
+    title = reference['title'] if "title" in reference.keys() else ""
+
     formatted = TREE_TEMPLATE.format(
         bib_filenames=json.dumps(bib_filenames_i),
-        title=reference['title'],
-        date=format_date(reference['issued']['date-parts'][0]),
+        title=title,
+        date=format_date(reference),
         meta_doi=format_doi(reference),
         meta_external=format_external(reference),
-        authors=''.join(
-            [f'\\author{{{format_author(author)}}}' for author in reference['author']]),
+        authors=get_author(reference),
         original_bibtex=original_bibtex)
 
     if tree_file_i.exists():

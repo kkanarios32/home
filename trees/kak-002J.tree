@@ -1,7 +1,9 @@
 \date{2025-01-05}
 \title{Operating Systems: Three Easy Pieces Notes}
+\author{kellenkanarios}
 \tag{systems}
-\tag{long}
+\tag{note}
+\tag{unfinished}
 
 \import{base-macros}
 \section{Virtual Memory}{

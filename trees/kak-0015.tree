@@ -1,7 +1,38 @@
 \date{2024-11-25}
-\title{Lost Notes}
-\p{Here will be miscellanous notes that are either unfinished or missing a home.}
-\query{
-  \open\query
-  \tag{lost}
+\title{Learning}
+\p{Here are things I am actively learning / working on before they become a more complete set of [[kak-0003]].}
+
+\put\transclude/numbered{false}
+\put\transclude/toc{false}
+
+\subtree{
+  \title{Reinforcement Learning}
+  \query{
+    \open\query
+    \isect{\tag{note}}{\tag{rl}}{\tag{unfinished}}
+  }
+}
+
+\subtree{
+  \title{Probability}
+  \query{
+    \open\query
+    \isect{\tag{note}}{\tag{prob}}{\tag{unfinished}}
+  }
+}
+
+\subtree{
+  \title{Systems}
+  \query{
+    \open\query
+    \isect{\tag{note}}{\tag{systems}}{\tag{unfinished}}
+  }
+}
+
+\subtree{
+  \title{Misc.}
+  \query{
+    \open\query
+    \isect{\tag{note}}{\tag{lost}}
+  }
 }

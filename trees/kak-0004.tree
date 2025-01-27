@@ -1,14 +1,13 @@
 \date{2024-10-29}
 \title{Disk}
-\p{Here are past things of interest that may be of interest in the future. Unfortunately, they are no longer "hot" and have been paged out lol.}
+\p{Here are past things of interest that may be of interest in the future. Unfortunately, they are no longer "hot" and have been paged out (hence the name!).}
 
 \put\transclude/toc{false}
 \put\transclude/numbered{false}
 \put\transclude/metadata{true}
-\put\transclude/expanded{false}
 
 
-\transclude{kak-0015}
+\transclude{kak-0003}
 
 \subtree{
   \title{Papers of a Week}

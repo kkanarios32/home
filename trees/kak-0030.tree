@@ -1,10 +1,10 @@
 \date{2025-01-24}
 \title{Reinforcement Learning}
+\author{kellenkanarios}
+\tag{unfinished}
+\tag{subject}
 
-\subtree[rl]{
-  \title{Notes}
-  \query{
-    \open\query
-    \isect{\tag{rl}}{\tag{long}}
-  }
+\query{
+  \open\query
+  \isect{\tag{rl}}{\tag{note}}
 }

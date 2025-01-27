@@ -1,9 +1,0 @@
-# Fdb version 4
-["pdflatex"] 0 "/home/kellen/Projects/forest/tex/references.bib" "references.pdf" "references" 0 -1
-  "/home/kellen/Projects/forest/tex/references.bib" 0 -1 0 ""
-  "references.aux" 0 -1 0 "pdflatex"
-  (generated)
-  "references.aux"
-  "references.log"
-  "references.pdf"
-  (rewritten before read)

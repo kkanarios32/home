@@ -1,0 +1,63 @@
+\date{2025-01-26}
+\import{base-macros}
+\tag{lost}
+\tag{note}
+\tag{unfinished}
+\title{Optimization Theory}
+\author{kellenkanarios}
+
+
+\section{Convex Optimization Background}{
+
+\transclude{kak-0034}
+\transclude{kak-0035}
+
+\p{
+\strong{Operations that preserve convexity}
+\ul{
+    \li{\strong{Nonnegative weighted sums:} if #{f_1, \ldots, f_n} are convex and #{\alpha_1, \ldots, \alpha_n > 0} then we have #{f(\boldsymbol{x}) = \sum_{i = 1}^{n} \alpha_i f_i(\boldsymbol{x})} is convex}
+    \li{\strong{Pointwise maximum:} if #{f_1, \ldots, f_n} are convex then #{f(\boldsymbol{x}) = \max_i \{f_i(\boldsymbol{x})\}} is convex }
+  }
+}
+
+\transclude{kak-0036}
+\transclude{kak-0037}
+
+\transclude{kak-0038}
+\transclude{kak-0039}
+}
+
+\section{Useful Miscellanous Math Background}{
+  \p{
+  In this section, we cover many random math facts / tools that come up / are useful in later optimization problems.
+  }
+    \section{Basic Matrix Analysis}{
+\ul{
+    \li{\strong{Matrix inner product:}
+##{\langle\mathbf{x},\mathbf{z}\rangle\ =\ \sum_{i=1}^{n}x_{i}z_{i}\quad\Longrightarrow\quad\langle\mathbf{X},\mathbf{Z}\rangle\ :=\ \sum_{i=1}^{m}\sum_{j=1}^{n}X_{i j}Z_{i j}} 
+    }
+    \li{\strong{Matrix trace:} #{{{M}}\in\mathbb{R}^{n\times n};\ {{\mathrm{tr}}}({{M}}):=\sum_{i=1}^{n}M_{i i}}
+    ##{
+      \begin{align*}
+      &\langle{\boldsymbol X},{\boldsymbol Z}\rangle\ =\ \mathrm{tr}\left({\boldsymbol X}^{\top}{\boldsymbol Z}\right)\ =\ \mathrm{tr}\left({\boldsymbol X}{\boldsymbol Z}^{\top}\right) \\
+    &\operatorname{tr}(\mathbf{A}\mathbf{B})=\operatorname{tr}(\mathbf{B}\mathbf{A})\\
+      &\operatorname{tr}(\mathbf{A}_{1}\mathbf{A}_{2}\cdots\mathbf{A}_{n})=\operatorname{tr}(\mathbf{A}_{\pi(1)}\mathbf{A}_{\pi(2)}\cdots\mathbf{A}_{\pi(n)})
+      \end{align*}
+    }
+    Where #{\pi} is a cyclic permutation on #{\{1,2,\cdots,n\}}
+    } 
+    }
+    \transclude{kak-003A}
+    \transclude{kak-003B}
+    \transclude{kak-003C}
+  }
+    \section{Taylor Expansion and Lipschitz Functions}{
+
+      }
+    \section{Optimality Conditions}{
+
+      }
+    \section{Rate of Convergence}{
+
+      }
+}
