@@ -1,0 +1,75 @@
+\title{Accelerating Minimap2}
+\tag{project}
+\import{base-macros}
+\date{2025-01-28}
+\author{kellenkanarios}
+
+\subtree{
+  \title{Useful Resources}
+  \ul{
+    \li{[minimap2-gb](https://github.com/Minimap2onGPU/mm2-gb)}
+  }
+}
+
+\subtree{
+  \title{Related Work}
+  \query{
+    \open\query
+    \isect{\taxon{reference}}{\tag{bio}}
+  }
+}
+
+\section{Data structure}{
+  \ul{
+    \li{A \em{query} is a genome sequence we are trying to align to a \em{reference} genome sequence}
+    \li{An \em{anchor} is a 3-tuple #{(x,y,w)}, indicating interval #{[x-w+1,x]} on the reference matching interval #{[y-w+1,y]} on the query.}
+    \li{A \em{chain} is a sequence of \em{anchors} chosen iteratively by 
+    ##{\operatorname{argmax}_{j}\{f(j)+x(j,i)-\beta(j,i)\}}
+    }
+  }
+  \remark{
+    lol.
+    }
+}
+
+\subtree{
+  \put\transclude/numbered{false}
+  \title{Daily Tracker}
+  \subtree{
+    \title{Year 2025}
+    \subtree{
+      \title{January, 2025}
+      \mdblock{01-28-25}{
+        Unraveling where the backtracking kernel is called:
+        \ul{
+          \li{\code{init_stream_gpu} calls the \code{plmem} functions that initialize the CUDA streams.}
+          \ul{
+            \li{Called in \code{main.c}}
+          }
+          \li{GPU chaining is started by \code{chain_stream_gpu}}
+        }
+      \strong{TODO:}
+      \ul{
+      \li{\strong{Short term}
+      \ul{
+        \li{Need to take u, z as input via devicePtr (need to modify devicePtr)}
+        \li{Pre-allocate device memory for u,z}
+        \li{Port km, f, p to devicePtr counterpart}
+        \li{Probably need to add n_u, n_v to devicePtr too?}
+        }
+      }
+      \li{\strong{Medium term}
+        \ul{
+          \li{radix_sort kernel}
+        }
+      }
+      \li{\strong{Questions}
+        \ul{
+          \li{How to cudaStreams?}
+        }
+      }
+      }
+    }
+  }
+}
+}

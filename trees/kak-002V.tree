@@ -1,7 +1,8 @@
 \title{Contrastive Safe RL}
 \tag{project}
 \import{base-macros}
-\author{[[kellenkanarios]]}
+\author{kellenkanarios}
+\date{2025-01-28}
 
 \subtree{
   \title{Useful Resources}

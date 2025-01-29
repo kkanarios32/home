@@ -5,34 +5,19 @@
 \put\transclude/numbered{false}
 \put\transclude/toc{false}
 
-\subtree{
-  \title{Reinforcement Learning}
-  \query{
+\query{
     \open\query
     \isect{\tag{note}}{\tag{rl}}{\tag{unfinished}}
-  }
 }
-
-\subtree{
-  \title{Probability}
-  \query{
+\query{
     \open\query
     \isect{\tag{note}}{\tag{prob}}{\tag{unfinished}}
-  }
 }
-
-\subtree{
-  \title{Systems}
-  \query{
+\query{
     \open\query
     \isect{\tag{note}}{\tag{systems}}{\tag{unfinished}}
-  }
 }
-
-\subtree{
-  \title{Misc.}
-  \query{
+\query{
     \open\query
     \isect{\tag{note}}{\tag{lost}}
-  }
 }

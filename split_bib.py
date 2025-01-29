@@ -52,15 +52,28 @@ csljson_file_name = csljson_file.stem
 with open(csljson_file, encoding='utf-8') as f:
     references = json.load(f)
 
-TREE_TEMPLATE = r"""% {bib_filenames}
-\title{{{title}}}
-\date{{{date}}}
-{authors}
-\taxon{{reference}}
-{meta_doi}{meta_external}
-\meta{{bibtex}}{{\startverb
-{original_bibtex}\stopverb}}
-"""
+
+def tree_template(bib_filenames="", title="", date="",
+                  authors="", meta_doi="", meta_external="", original_bibtex=""
+                  ):
+    formatted = ""
+    if bib_filenames != "":
+        formatted += f"% {bib_filenames}\n"
+    if title != "":
+        formatted += f"\\title{{{title}}}\n"
+    if date != "":
+        formatted += f"\\date{{{date}}}\n"
+    if authors != "":
+        formatted += f"{authors}\n"
+    formatted += "\\taxon{reference}\n"
+    if meta_doi != "":
+        formatted += f"{meta_doi}"
+    if meta_external != "":
+        formatted += f"{meta_external}\n"
+    formatted += "\\meta{bibtex}{\startverb\n"
+    if original_bibtex != "":
+        formatted += f"{original_bibtex}\stopverb}}"
+    return formatted
 
 
 def format_author(author):
@@ -80,7 +93,7 @@ def format_author(author):
 def get_author(reference):
     if 'author' in reference.keys():
         return ''.join(
-            [f'\\author{{{format_author(author)}}}' for author in reference['author']]),
+            [f'\\author{{{format_author(author)}}}' for author in reference['author']])
     else:
         return ""
 
@@ -182,14 +195,15 @@ for i, reference in enumerate(references):
 
     title = reference['title'] if "title" in reference.keys() else ""
 
-    formatted = TREE_TEMPLATE.format(
+    formatted = tree_template(
         bib_filenames=json.dumps(bib_filenames_i),
         title=title,
         date=format_date(reference),
         meta_doi=format_doi(reference),
         meta_external=format_external(reference),
         authors=get_author(reference),
-        original_bibtex=original_bibtex)
+        original_bibtex=original_bibtex
+    )
 
     if tree_file_i.exists():
         with open(tree_file_i, 'r', encoding='utf-8') as f:

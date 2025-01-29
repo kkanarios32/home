@@ -160,55 +160,16 @@
     "type": "book"
   },
   {
-    "DOI": "10.48550/arXiv.2403.01734",
-    "URL": "https://arxiv.org/abs/2403.01734",
-    "abstract": "Offline goal-conditioned reinforcement learning (GCRL) aims at solving goal-reaching tasks with sparse rewards from an offline dataset. While prior work has demonstrated various approaches for agents to learn near-optimal policies, these methods encounter limitations when dealing with diverse constraints in complex environments, such as safety constraints. Some of these approaches prioritize goal attainment without considering safety, while others excessively focus on safety at the expense of training efficiency. In this paper, we study the problem of constrained offline GCRL and propose a new method called Recovery-based Supervised Learning (RbSL) to accomplish safety-critical tasks with various goals. To evaluate the method performance, we build a benchmark based on the robot-fetching environment with a randomly positioned obstacle and use expert or random policies to generate an offline dataset. We compare RbSL with three offline GCRL algorithms and one offline safe RL algorithm. As a result, our method outperforms the existing state-of-the-art methods to a large extent. Furthermore, we validate the practicality and effectiveness of RbSL by deploying it on a real Panda manipulator. Code is available at https://github.com/Sunlighted/RbSL.git.",
-    "accessed": {
-      "date-parts": [
-        [
-          2024,
-          11,
-          24
-        ]
-      ]
-    },
     "author": [
       {
-        "family": "Cao",
-        "given": "Chenyang"
-      },
-      {
-        "family": "Yan",
-        "given": "Zichen"
-      },
-      {
-        "family": "Lu",
-        "given": "Renhao"
-      },
-      {
-        "family": "Tan",
-        "given": "Junbo"
-      },
-      {
-        "family": "Wang",
-        "given": "Xueqian"
+        "family": "Borgers",
+        "given": "Tilman"
       }
     ],
-    "id": "caoOfflineGoalConditionedReinforcement2024",
-    "issued": {
-      "date-parts": [
-        [
-          2024,
-          3
-        ]
-      ]
-    },
-    "keyword": "Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Computer Science - Robotics",
+    "id": "borgersLectureNotesGame",
     "language": "en-US",
-    "number": "arXiv:2403.01734",
-    "publisher": "arXiv",
-    "title": "Offline Goal-Conditioned Reinforcement Learning for  Safety-Critical Tasks with Recovery Policy",
-    "type": ""
+    "title": "Lecture Notes on Game Theory",
+    "type": "article-journal"
   },
   {
     "DOI": "10.48550/arXiv.2403.01734",
@@ -257,7 +218,7 @@
     "keyword": "Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Computer Science - Robotics",
     "number": "arXiv:2403.01734",
     "publisher": "arXiv",
-    "title": "Offline Goal-Conditioned Reinforcement Learning for  Safety-Critical Tasks with Recovery Policy",
+    "title": "Offline Goal-Conditioned Reinforcement Learning for Safety-Critical Tasks with Recovery Policy",
     "type": ""
   },
   {
@@ -357,7 +318,7 @@
   {
     "DOI": "10.48550/arXiv.2310.02025",
     "URL": "https://arxiv.org/abs/2310.02025",
-    "abstract": "Zeroth-order (ZO) optimization has become a popular technique for solving machine learning (ML) problems when first-order (FO) information is difficult or impossible to obtain. However, the scalability of ZO optimization remains an open problem: Its use has primarily been limited to relatively small-scale ML problems, such as sample-wise adversarial attack generation. To our best knowledge , no prior work has demonstrated the effectiveness of ZO optimization in training deep neural networks (DNNs) without a significant decrease in performance. To overcome this roadblock, we develop DeepZero, a principled ZO deep learning (DL) framework that can scale ZO optimization to DNN training from scratch through three primary innovations. First, we demonstrate the advantages of coordinatewise gradient estimation (CGE) over randomized vector-wise gradient estimation in training accuracy and computational efficiency. Second, we propose a sparsityinduced ZO training protocol that extends the model pruning methodology using only finite differences to explore and exploit the sparse DL prior in CGE. Third, we develop the methods of feature reuse and forward parallelization to advance the practical implementations of ZO training. Our extensive experiments show that DeepZero achieves state-of-the-art (SOTA) accuracy on ResNet-20 trained on CIFAR-10, approaching FO training performance for the first time. Furthermore , we show the practical utility of DeepZero in applications of certified adversarial defense and DL-based partial differential equation error correction, achieving 10-20% improvement over SOTA. We believe our results will inspire future research on scalable ZO optimization and contribute to advancing DL with black box. Codes are available at https://github.com/OPTML-Group/DeepZero.",
+    "abstract": "Zeroth-order (ZO) optimization has become a popular technique for solving machine learning (ML) problems when first-order (FO) information is difficult or impossible to obtain. However, the scalability of ZO optimization remains an open problem: Its use has primarily been limited to relatively small-scale ML problems, such as sample-wise adversarial attack generation. To our best knowledge, no prior work has demonstrated the effectiveness of ZO optimization in training deep neural networks (DNNs) without a significant decrease in performance. To overcome this roadblock, we develop DeepZero, a principled ZO deep learning (DL) framework that can scale ZO optimization to DNN training from scratch through three primary innovations. First, we demonstrate the advantages of coordinatewise gradient estimation (CGE) over randomized vector-wise gradient estimation in training accuracy and computational efficiency. Second, we propose a sparsityinduced ZO training protocol that extends the model pruning methodology using only finite differences to explore and exploit the sparse DL prior in CGE. Third, we develop the methods of feature reuse and forward parallelization to advance the practical implementations of ZO training. Our extensive experiments show that DeepZero achieves state-of-the-art (SOTA) accuracy on ResNet-20 trained on CIFAR-10, approaching FO training performance for the first time. Furthermore, we show the practical utility of DeepZero in applications of certified adversarial defense and DL-based partial differential equation error correction, achieving 10-20% improvement over SOTA. We believe our results will inspire future research on scalable ZO optimization and contribute to advancing DL with black box. Codes are available at https://github.com/OPTML-Group/DeepZero.",
     "accessed": {
       "date-parts": [
         [
@@ -504,7 +465,7 @@
     "type": ""
   },
   {
-    "abstract": "Contrastive learning has gained significant attention as a method for self-supervised learning. The contrastive loss function ensures that embeddings of positive sample pairs (e.g., different samples from the same class or different views of the same object) are similar, while embeddings of negative pairs are dissimilar. Practical constraints such as large memory requirements make it challenging to consider all possible positive and negative pairs, leading to the use of mini-batch optimization. In this paper, we investigate the theoretical aspects of mini-batch optimization in contrastive learning. We show that mini-batch optimization is equivalent to full-batch optimization if and only if all $ \\binom{N}{B}$ mini-batches are selected, while sub-optimality may arise when examining only a subset. We then demonstrate that utilizing high-loss mini-batches can speed up SGD convergence and propose a spectral clustering-based approach for identifying these high-loss mini-batches. Our experimental results validate our theoretical findings and demonstrate that our proposed algorithm outperforms vanilla SGD in practically relevant settings, providing a better understanding of mini-batch optimization in contrastive learning.",
+    "abstract": "Contrastive learning has gained significant attention as a method for self-supervised learning. The contrastive loss function ensures that embeddings of positive sample pairs (e.g., different samples from the same class or different views of the same object) are similar, while embeddings of negative pairs are dissimilar. Practical constraints such as large memory requirements make it challenging to consider all possible positive and negative pairs, leading to the use of mini-batch optimization. In this paper, we investigate the theoretical aspects of mini-batch optimization in contrastive learning. We show that mini-batch optimization is equivalent to full-batch optimization if and only if all $\\binom{N}{B}$ mini-batches are selected, while sub-optimality may arise when examining only a subset. We then demonstrate that utilizing high-loss mini-batches can speed up SGD convergence and propose a spectral clustering-based approach for identifying these high-loss mini-batches. Our experimental results validate our theoretical findings and demonstrate that our proposed algorithm outperforms vanilla SGD in practically relevant settings, providing a better understanding of mini-batch optimization in contrastive learning.",
     "accessed": {
       "date-parts": [
         [
@@ -720,7 +681,7 @@
     "type": "article-journal"
   },
   {
-    "abstract": "In continual learning, a learner has to keep learning from the data over its whole life time. A key issue is to decide what knowledge to keep and what knowledge to let go. In a neural network , this can be implemented by using a step-size vector to scale how much gradient samples change network weights. Common algorithms, like RMSProp and Adam, use heuristics, specifically normalization, to adapt this step-size vector. In this paper, we show that those heuristics ignore the effect of their adaptation on the overall objective function, for example by moving the step-size vector away from better step-size vectors. On the other hand, stochastic meta-gradient descent algorithms, like IDBD (Sutton, 1992), explicitly optimize the step-size vector with respect to the overall objective function. On simple problems, we show that IDBD is able to consistently improve step-size vectors, where RMSProp and Adam do not. We explain the differences between the two approaches and their respective limitations. We conclude by suggesting that combining both approaches could be a promising future direction to improve the performance of neural networks in continual learning.",
+    "abstract": "In continual learning, a learner has to keep learning from the data over its whole life time. A key issue is to decide what knowledge to keep and what knowledge to let go. In a neural network, this can be implemented by using a step-size vector to scale how much gradient samples change network weights. Common algorithms, like RMSProp and Adam, use heuristics, specifically normalization, to adapt this step-size vector. In this paper, we show that those heuristics ignore the effect of their adaptation on the overall objective function, for example by moving the step-size vector away from better step-size vectors. On the other hand, stochastic meta-gradient descent algorithms, like IDBD (Sutton, 1992), explicitly optimize the step-size vector with respect to the overall objective function. On simple problems, we show that IDBD is able to consistently improve step-size vectors, where RMSProp and Adam do not. We explain the differences between the two approaches and their respective limitations. We conclude by suggesting that combining both approaches could be a promising future direction to improve the performance of neural networks in continual learning.",
     "accessed": {
       "date-parts": [
         [
@@ -883,7 +844,7 @@
     "type": "book"
   },
   {
-    "abstract": "Natural intelligence processes experience as a continuous stream, sensing, acting, and learning moment-by-moment in real time. Streaming learning, the modus operandi of classic reinforcement learning (RL) algorithms like Q-learning and TD, mimics natural learning by using the most recent sample without storing it. This approach is also ideal for resource-constrained, communication-limited, and privacy-sensitive applications. However, in deep RL, learners almost always use batch updates and replay buffers, making them computationally expensive and incompatible with streaming learning. Although the prevalence of batch deep RL is often attributed to its sample efficiency, a more critical reason for the absence of streaming deep RL is its frequent instability and failure to learn, which we refer to as stream barrier. This paper introduces the stream-x algorithms, the first class of deep RL algorithms to overcome stream barrier for both prediction and control and match sample efficiency of batch RL. Through experiments in Mujoco Gym, DM Control, and Atari Games, we demonstrate stream barrier in existing algorithms and successful stable learning with our stream-x algorithms: stream Q, stream AC, and stream TD, achieving the best model-free performance in DM Control Dog environments. A set of common techniques underlies the stream-x algorithms, enabling their success with a single set of hyperparameters and allowing for easy extension to other algorithms , thereby reviving streaming RL.",
+    "abstract": "Natural intelligence processes experience as a continuous stream, sensing, acting, and learning moment-by-moment in real time. Streaming learning, the modus operandi of classic reinforcement learning (RL) algorithms like Q-learning and TD, mimics natural learning by using the most recent sample without storing it. This approach is also ideal for resource-constrained, communication-limited, and privacy-sensitive applications. However, in deep RL, learners almost always use batch updates and replay buffers, making them computationally expensive and incompatible with streaming learning. Although the prevalence of batch deep RL is often attributed to its sample efficiency, a more critical reason for the absence of streaming deep RL is its frequent instability and failure to learn, which we refer to as stream barrier. This paper introduces the stream-x algorithms, the first class of deep RL algorithms to overcome stream barrier for both prediction and control and match sample efficiency of batch RL. Through experiments in Mujoco Gym, DM Control, and Atari Games, we demonstrate stream barrier in existing algorithms and successful stable learning with our stream-x algorithms: stream Q, stream AC, and stream TD, achieving the best model-free performance in DM Control Dog environments. A set of common techniques underlies the stream-x algorithms, enabling their success with a single set of hyperparameters and allowing for easy extension to other algorithms, thereby reviving streaming RL.",
     "author": [
       {
         "family": "Elsayed",
@@ -949,7 +910,7 @@
   {
     "DOI": "10.48550/arXiv.2206.07568",
     "URL": "https://arxiv.org/abs/2206.07568",
-    "abstract": "In reinforcement learning (RL), it is easier to solve a task if given a good representation. While deep RL should automatically acquire such good representations, prior work often finds that learning representations in an end-to-end fashion is unstable and instead equip RL algorithms with additional representation learning parts (e.g., auxiliary losses, data augmentation). How can we design RL algorithms that directly acquire good representations? In this paper, instead of adding representation learning parts to an existing RL algorithm, we show (contrastive) representation learning methods can be cast as RL algorithms in their own right. To do this, we build upon prior work and apply contrastive representation learning to action-labeled trajectories, in such a way that the (inner product of) learned representations exactly corresponds to a goal-conditioned value function. We use this idea to reinterpret a prior RL method as performing contrastive learning , and then use the idea to propose a much simpler method that achieves similar performance. Across a range of goal-conditioned RL tasks, we demonstrate that contrastive RL methods achieve higher success rates than prior non-contrastive methods, including in the offline RL setting. We also show that contrastive RL outperforms prior methods on image-based tasks, without using data augmentation or auxiliary objectives.",
+    "abstract": "In reinforcement learning (RL), it is easier to solve a task if given a good representation. While deep RL should automatically acquire such good representations, prior work often finds that learning representations in an end-to-end fashion is unstable and instead equip RL algorithms with additional representation learning parts (e.g., auxiliary losses, data augmentation). How can we design RL algorithms that directly acquire good representations? In this paper, instead of adding representation learning parts to an existing RL algorithm, we show (contrastive) representation learning methods can be cast as RL algorithms in their own right. To do this, we build upon prior work and apply contrastive representation learning to action-labeled trajectories, in such a way that the (inner product of) learned representations exactly corresponds to a goal-conditioned value function. We use this idea to reinterpret a prior RL method as performing contrastive learning, and then use the idea to propose a much simpler method that achieves similar performance. Across a range of goal-conditioned RL tasks, we demonstrate that contrastive RL methods achieve higher success rates than prior non-contrastive methods, including in the offline RL setting. We also show that contrastive RL outperforms prior methods on image-based tasks, without using data augmentation or auxiliary objectives.",
     "accessed": {
       "date-parts": [
         [
@@ -989,7 +950,7 @@
     "keyword": "Computer Science - Artificial Intelligence,Computer Science - Machine Learning",
     "number": "arXiv:2206.07568",
     "publisher": "arXiv",
-    "title": "Contrastive Learning as Goal-Conditioned Reinforcement Learning ",
+    "title": "Contrastive Learning as Goal-Conditioned Reinforcement Learning",
     "type": ""
   },
   {
@@ -1004,6 +965,83 @@
     "title": "Probabilistic Reinforcement Learning: Using Data to Define Desired Outcomes and Inferring How to Get There",
     "title-short": "Probabilistic Reinforcement Learning",
     "type": "article-journal"
+  },
+  {
+    "DOI": "10.48550/arXiv.2312.16730",
+    "URL": "https://arxiv.org/abs/2312.16730",
+    "abstract": "These lecture notes give a statistical perspective on the foundations of reinforcement learning and interactive decision making. We present a unifying framework for addressing the exploration-exploitation dilemma using frequentist and Bayesian approaches, with connections and parallels between supervised learning/estimation and decision making as an overarching theme. Special attention is paid to function approximation and flexible model classes such as neural networks. Topics covered include multi-armed and contextual bandits, structured bandits, and reinforcement learning with high-dimensional feedback.",
+    "accessed": {
+      "date-parts": [
+        [
+          2025,
+          1,
+          23
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Foster",
+        "given": "Dylan J."
+      },
+      {
+        "family": "Rakhlin",
+        "given": "Alexander"
+      }
+    ],
+    "id": "fosterFoundationsReinforcementLearning2023",
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    },
+    "keyword": "Computer Science - Machine Learning,Mathematics - Optimization and Control,Mathematics - Statistics Theory,Statistics - Machine Learning,Statistics - Statistics Theory",
+    "language": "en-US",
+    "number": "arXiv:2312.16730",
+    "publisher": "arXiv",
+    "title": "Foundations of Reinforcement Learning and Interactive Decision Making",
+    "type": ""
+  },
+  {
+    "DOI": "10.48550/arXiv.2312.16730",
+    "URL": "https://arxiv.org/abs/2312.16730",
+    "abstract": "These lecture notes give a statistical perspective on the foundations of reinforcement learning and interactive decision making. We present a unifying framework for addressing the exploration-exploitation dilemma using frequentist and Bayesian approaches, with connections and parallels between supervised learning/estimation and decision making as an overarching theme. Special attention is paid to function approximation and flexible model classes such as neural networks. Topics covered include multi-armed and contextual bandits, structured bandits, and reinforcement learning with high-dimensional feedback.",
+    "accessed": {
+      "date-parts": [
+        [
+          2025,
+          1,
+          23
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Foster",
+        "given": "Dylan J."
+      },
+      {
+        "family": "Rakhlin",
+        "given": "Alexander"
+      }
+    ],
+    "id": "fosterFoundationsReinforcementLearning2023a",
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    },
+    "keyword": "Computer Science - Machine Learning,Mathematics - Optimization and Control,Mathematics - Statistics Theory,Statistics - Machine Learning,Statistics - Statistics Theory",
+    "number": "arXiv:2312.16730",
+    "publisher": "arXiv",
+    "title": "Foundations of Reinforcement Learning and Interactive Decision Making",
+    "type": ""
   },
   {
     "DOI": "10.48550/arXiv.2402.17135",
@@ -1140,7 +1178,7 @@
     },
     "language": "en-US",
     "page": "34",
-    "title": "Examining the Use of Temporal-Difference Incremental Delta-Bar-Delta for Real-World Predictive Knowledge Architectures ",
+    "title": "Examining the Use of Temporal-Difference Incremental Delta-Bar-Delta for Real-World Predictive Knowledge Architectures",
     "type": "article-journal",
     "volume": "7"
   },
@@ -1221,6 +1259,45 @@
     "publisher": "arXiv",
     "title": "Direct Language Model Alignment from Online AI Feedback",
     "type": ""
+  },
+  {
+    "ISSN": "1938-7228",
+    "abstract": "We present a new estimation principle for parameterized statistical models. The idea is to perform nonlinear logistic regression to discriminate between the observed data and some artificially generated noise, using the model log-density function in the regression nonlinearity. We show that this leads to a consistent (convergent) estimator of the parameters, and analyze the asymptotic variance. In particular, the method is shown to directly work for unnormalized models, i.e. models where the density function does not integrate to one. The normalization constant can be estimated just like any other parameter. For a tractable ICA model, we compare the method with other estimation methods that can be used to learn unnormalized models, including score matching, contrastive divergence, and maximum-likelihood where the normalization constant is estimated with importance sampling. Simulations show that noise-contrastive estimation offers the best trade-off between computational and statistical efficiency. The method is then applied to the modeling of natural images: We show that the method can successfully estimate a large-scale two-layer model and a Markov random field.",
+    "accessed": {
+      "date-parts": [
+        [
+          2025,
+          1,
+          24
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Gutmann",
+        "given": "Michael"
+      },
+      {
+        "family": "Hyvärinen",
+        "given": "Aapo"
+      }
+    ],
+    "container-title": "Proceedings of the Thirteenth International Conference on Artificial Intelligence and Statistics",
+    "id": "gutmannNoisecontrastiveEstimationNew2010",
+    "issued": {
+      "date-parts": [
+        [
+          2010,
+          3
+        ]
+      ]
+    },
+    "language": "en-US",
+    "page": "297-304",
+    "publisher": "JMLR Workshop and Conference Proceedings",
+    "title": "Noise-contrastive estimation: A new estimation principle for unnormalized statistical models",
+    "title-short": "Noise-contrastive estimation",
+    "type": "paper-conference"
   },
   {
     "abstract": "Occupancy functions play an instrumental role in reinforcement learning (RL) for guiding exploration, handling distribution shift, and optimizing general objectives beyond the expected return. Yet, computationally efficient policy optimization methods that use (only) occupancy functions are virtually non-existent. In this paper, we establish the theoretical foundations of model-free policy gradient (PG) methods that compute the gradient through the occupancy for both online and offline RL, without modeling value functions. Our algorithms reduce gradient estimation to squared-loss regression and are computationally oracle-efficient. We characterize the sample complexities of both local and global convergence, accounting for both finite-sample estimation error and the roles of exploration (online) and data coverage (offline). Occupancy-based PG naturally handles arbitrary offline data distributions, and, with one-line algorithmic changes, can be adapted to optimize any differentiable objective functional.",
@@ -1306,7 +1383,7 @@
   {
     "DOI": "10.48550/arXiv.2405.07838",
     "URL": "https://arxiv.org/abs/2405.07838",
-    "abstract": "General Value Functions (GVFs) (Sutton et al., 2011) represent predictive knowledge in reinforcement learning. Each GVF computes the expected return for a given policy, based on a unique reward. Existing methods relying on fixed behavior policies or pre-collected data often face data efficiency issues when learning multiple GVFs in parallel using off-policy methods. To address this , we introduce GVFExplorer, which adaptively learns a single behavior policy that efficiently collects data for evaluating multiple GVFs in parallel. Our method optimizes the behavior policy by minimizing the total variance in return across GVFs, thereby reducing the required environmental interactions. We use an existing temporal-difference-style variance estimator to approximate the return variance. We prove that each behavior policy update decreases the overall mean squared error in GVF predictions. We empirically show our method’s performance in tabular and nonlinear function approximation settings, including Mujoco environments, with stationary and non-stationary reward signals, optimizing data usage and reducing prediction errors across multiple GVFs.",
+    "abstract": "General Value Functions (GVFs) (Sutton et al., 2011) represent predictive knowledge in reinforcement learning. Each GVF computes the expected return for a given policy, based on a unique reward. Existing methods relying on fixed behavior policies or pre-collected data often face data efficiency issues when learning multiple GVFs in parallel using off-policy methods. To address this, we introduce GVFExplorer, which adaptively learns a single behavior policy that efficiently collects data for evaluating multiple GVFs in parallel. Our method optimizes the behavior policy by minimizing the total variance in return across GVFs, thereby reducing the required environmental interactions. We use an existing temporal-difference-style variance estimator to approximate the return variance. We prove that each behavior policy update decreases the overall mean squared error in GVF predictions. We empirically show our method’s performance in tabular and nonlinear function approximation settings, including Mujoco environments, with stationary and non-stationary reward signals, optimizing data usage and reducing prediction errors across multiple GVFs.",
     "accessed": {
       "date-parts": [
         [
@@ -1533,7 +1610,7 @@
   },
   {
     "URL": "https://arxiv.org/abs/2301.11181",
-    "abstract": "Selecting exploratory actions that generate a rich stream of experience for better learning is a fundamental challenge in reinforcement learning (RL). An approach to tackle this problem consists in selecting actions according to specific policies for an extended period of time, also known as options. A recent line of work to derive such exploratory options builds upon the eigenfunctions of the graph Laplacian. Importantly, until now these methods have been mostly limited to tabular domains where (1) the graph Laplacian matrix was either given or could be fully estimated , (2) performing eigendecomposition on this matrix was computationally tractable, and (3) value functions could be learned exactly. Additionally, these methods required a separate option discovery phase. These assumptions are fundamentally not scalable. In this paper we address these limitations and show how recent results for directly approximating the eigenfunctions of the Laplacian can be leveraged to truly scale up options-based exploration. To do so, we introduce a fully online deep RL algorithm for discovering Laplacianbased options and evaluate our approach on a variety of pixel-based tasks. We compare to several state-of-the-art exploration methods and show that our approach is effective, general, and especially promising in non-stationary settings.",
+    "abstract": "Selecting exploratory actions that generate a rich stream of experience for better learning is a fundamental challenge in reinforcement learning (RL). An approach to tackle this problem consists in selecting actions according to specific policies for an extended period of time, also known as options. A recent line of work to derive such exploratory options builds upon the eigenfunctions of the graph Laplacian. Importantly, until now these methods have been mostly limited to tabular domains where (1) the graph Laplacian matrix was either given or could be fully estimated, (2) performing eigendecomposition on this matrix was computationally tractable, and (3) value functions could be learned exactly. Additionally, these methods required a separate option discovery phase. These assumptions are fundamentally not scalable. In this paper we address these limitations and show how recent results for directly approximating the eigenfunctions of the Laplacian can be leveraged to truly scale up options-based exploration. To do so, we introduce a fully online deep RL algorithm for discovering Laplacianbased options and evaluate our approach on a variety of pixel-based tasks. We compare to several state-of-the-art exploration methods and show that our approach is effective, general, and especially promising in non-stationary settings.",
     "accessed": {
       "date-parts": [
         [
@@ -1642,7 +1719,7 @@
     "type": ""
   },
   {
-    "abstract": "Learning goal-directed behavior in environments with sparse feedback is a major challenge for reinforcement learning algorithms. One of the key difficulties is insufficient exploration , resulting in an agent being unable to learn robust policies. Intrinsically motivated agents can explore new behavior for their own sake rather than to directly solve external goals. Such intrinsic behaviors could eventually help the agent solve tasks posed by the environment. We present hierarchicalDQN (h-DQN), a framework to integrate hierarchical action-value functions, operating at different temporal scales, with goal-driven intrinsically motivated deep reinforcement learning. A top-level q-value function learns a policy over intrinsic goals, while a lower-level function learns a policy over atomic actions to satisfy the given goals. h-DQN allows for flexible goal specifications, such as functions over entities and relations. This provides an efficient space for exploration in complicated environments. We demonstrate the strength of our approach on two problems with very sparse and delayed feedback: (1) a complex discrete stochastic decision process with stochastic transitions, and (2) the classic ATARI game –“Montezuma’s Revenge”.",
+    "abstract": "Learning goal-directed behavior in environments with sparse feedback is a major challenge for reinforcement learning algorithms. One of the key difficulties is insufficient exploration, resulting in an agent being unable to learn robust policies. Intrinsically motivated agents can explore new behavior for their own sake rather than to directly solve external goals. Such intrinsic behaviors could eventually help the agent solve tasks posed by the environment. We present hierarchicalDQN (h-DQN), a framework to integrate hierarchical action-value functions, operating at different temporal scales, with goal-driven intrinsically motivated deep reinforcement learning. A top-level q-value function learns a policy over intrinsic goals, while a lower-level function learns a policy over atomic actions to satisfy the given goals. h-DQN allows for flexible goal specifications, such as functions over entities and relations. This provides an efficient space for exploration in complicated environments. We demonstrate the strength of our approach on two problems with very sparse and delayed feedback: (1) a complex discrete stochastic decision process with stochastic transitions, and (2) the classic ATARI game –“Montezuma’s Revenge”.",
     "author": [
       {
         "family": "Kulkarni",
@@ -1906,7 +1983,7 @@
     "language": "en-US",
     "number": "arXiv:2309.00267",
     "publisher": "arXiv",
-    "title": "RLAIF vs. RLHF: Scaling Reinforcement Learning from  Human Feedback with AI Feedback",
+    "title": "RLAIF vs. RLHF: Scaling Reinforcement Learning from Human Feedback with AI Feedback",
     "title-short": "RLAIF vs. RLHF",
     "type": ""
   },
@@ -1953,7 +2030,7 @@
     "language": "en-US",
     "number": "arXiv:2005.01643",
     "publisher": "arXiv",
-    "title": "Offline Reinforcement Learning: Tutorial, Review, and  Perspectives on Open Problems",
+    "title": "Offline Reinforcement Learning: Tutorial, Review, and Perspectives on Open Problems",
     "title-short": "Offline Reinforcement Learning",
     "type": ""
   },
@@ -1983,7 +2060,7 @@
         "given": "Dale"
       },
       {
-        "family": "Gyö rgy",
+        "family": "György",
         "given": "András"
       },
       {
@@ -2074,7 +2151,7 @@
         ]
       ]
     },
-    "keyword": "Computer Science - Distributed Parallel and Cluster Computing, Computer Science - Machine Learning,Computer Science - Performance",
+    "keyword": "Computer Science - Distributed Parallel and Cluster Computing,Computer Science - Machine Learning,Computer Science - Performance",
     "language": "en-US",
     "page": "708-727",
     "title": "The Deep Learning Compiler: A Comprehensive Survey",
@@ -2164,13 +2241,13 @@
     "keyword": "Computer Science - Artificial Intelligence,Computer Science - Machine Learning",
     "number": "arXiv:2408.05804",
     "publisher": "arXiv",
-    "title": "A Single Goal is All You Need: Skills and Exploration Emerge from Contrastive RL without Rewards, Demonstrations , or Subgoals",
+    "title": "A Single Goal is All You Need: Skills and Exploration Emerge from Contrastive RL without Rewards, Demonstrations, or Subgoals",
     "title-short": "A Single Goal is All You Need",
     "type": ""
   },
   {
     "URL": "https://arxiv.org/abs/2110.05740",
-    "abstract": "Reasoning at multiple levels of temporal abstraction is one of the key attributes of intelligence. In reinforcement learning, this is often modeled through temporally extended courses of actions called options. Options allow agents to make predictions and to operate at different levels of abstraction within an environment. Nevertheless , approaches based on the options framework often start with the assumption that a reasonable set of options is known beforehand. When this is not the case, there are no definitive answers for which options one should consider. In this paper, we argue that the successor representation, which encodes states based on the pattern of state visitation that follows them, can be seen as a natural substrate for the discovery and use of temporal abstractions. To support our claim, we take a big picture view of recent results, showing how the successor representation can be used to discover options that facilitate either temporally-extended exploration or planning. We cast these results as instantiations of a general framework for option discovery in which the agent’s representation is used to identify useful options, which are then used to further improve its representation. This results in a virtuous, never-ending, cycle in which both the representation and the options are constantly refined based on each other. Beyond option discovery itself, we also discuss how the successor representation allows us to augment a set of options into a combinatorially large counterpart without additional learning. This is achieved through the combination of previously learned options. Our empirical evaluation focuses on options discovered for temporally-extended exploration and on the use of the successor representation to combine them. Our results shed light on important design decisions involved in the definition of options and demonstrate the synergy of different methods based on the successor representation, such as eigenoptions and the option keyboard.",
+    "abstract": "Reasoning at multiple levels of temporal abstraction is one of the key attributes of intelligence. In reinforcement learning, this is often modeled through temporally extended courses of actions called options. Options allow agents to make predictions and to operate at different levels of abstraction within an environment. Nevertheless, approaches based on the options framework often start with the assumption that a reasonable set of options is known beforehand. When this is not the case, there are no definitive answers for which options one should consider. In this paper, we argue that the successor representation, which encodes states based on the pattern of state visitation that follows them, can be seen as a natural substrate for the discovery and use of temporal abstractions. To support our claim, we take a big picture view of recent results, showing how the successor representation can be used to discover options that facilitate either temporally-extended exploration or planning. We cast these results as instantiations of a general framework for option discovery in which the agent’s representation is used to identify useful options, which are then used to further improve its representation. This results in a virtuous, never-ending, cycle in which both the representation and the options are constantly refined based on each other. Beyond option discovery itself, we also discuss how the successor representation allows us to augment a set of options into a combinatorially large counterpart without additional learning. This is achieved through the combination of previously learned options. Our empirical evaluation focuses on options discovered for temporally-extended exploration and on the use of the successor representation to combine them. Our results shed light on important design decisions involved in the definition of options and demonstrate the synergy of different methods based on the successor representation, such as eigenoptions and the option keyboard.",
     "accessed": {
       "date-parts": [
         [
@@ -2211,7 +2288,7 @@
     "language": "en-US",
     "number": "arXiv:2110.05740",
     "publisher": "arXiv",
-    "title": "Temporal Abstraction in Reinforcement Learning with the  Successor Representation",
+    "title": "Temporal Abstraction in Reinforcement Learning with the Successor Representation",
     "type": ""
   },
   {
@@ -2418,13 +2495,13 @@
     },
     "language": "en-US",
     "page": "63674-63686",
-    "title": "Discovering Hierarchical Achievements in Reinforcement Learning  via Contrastive Learning",
+    "title": "Discovering Hierarchical Achievements in Reinforcement Learning via Contrastive Learning",
     "type": "article-journal",
     "volume": "36"
   },
   {
     "URL": "https://arxiv.org/abs/2406.05883",
-    "abstract": "Policy alignment of large language models refers to constrained policy optimization, where the policy is optimized to maximize a reward while staying close to a reference policy with respect to an $f$-divergence such as the $\\mathsf{KL}$ divergence. The best of $n$ alignment policy selects a sample from the reference policy that has the maximum reward among $n$ independent samples. For both cases (policy alignment and best of $n$), recent works showed empirically that the reward improvement of the aligned policy on the reference one scales like $ \\sqrt{\\mathsf{KL}}$, with an explicit bound in $n$ on the $\\mathsf{KL}$ for the best of $n$ policy. We show in this paper that the $ \\sqrt{\\mathsf{KL}}$ information theoretic upper bound holds if the reward under the reference policy has sub-gaussian tails. Moreover, we prove for the best of $n$ policy, that the $\\mathsf{KL}$ upper bound can be obtained for any $f$-divergence via a reduction to exponential order statistics owing to the R\\’enyi representation of order statistics, and a data processing inequality. If additional information is known on the tails of the aligned policy we show that tighter control on the reward improvement can be obtained via the R\\’enyi divergence. Finally we demonstrate how these upper bounds transfer from proxy rewards to golden rewards which results in a decrease in the golden reward improvement due to overestimation and approximation errors of the proxy reward.",
+    "abstract": "Policy alignment of large language models refers to constrained policy optimization, where the policy is optimized to maximize a reward while staying close to a reference policy with respect to an $f$-divergence such as the $\\mathsf{KL}$ divergence. The best of $n$ alignment policy selects a sample from the reference policy that has the maximum reward among $n$ independent samples. For both cases (policy alignment and best of $n$), recent works showed empirically that the reward improvement of the aligned policy on the reference one scales like $\\sqrt{\\mathsf{KL}}$, with an explicit bound in $n$ on the $\\mathsf{KL}$ for the best of $n$ policy. We show in this paper that the $\\sqrt{\\mathsf{KL}}$ information theoretic upper bound holds if the reward under the reference policy has sub-gaussian tails. Moreover, we prove for the best of $n$ policy, that the $\\mathsf{KL}$ upper bound can be obtained for any $f$-divergence via a reduction to exponential order statistics owing to the R\\’enyi representation of order statistics, and a data processing inequality. If additional information is known on the tails of the aligned policy we show that tighter control on the reward improvement can be obtained via the R\\’enyi divergence. Finally we demonstrate how these upper bounds transfer from proxy rewards to golden rewards which results in a decrease in the golden reward improvement due to overestimation and approximation errors of the proxy reward.",
     "accessed": {
       "date-parts": [
         [
@@ -2794,6 +2871,39 @@
     "type": "book"
   },
   {
+    "DOI": "10.1007/978-3-642-14394-6",
+    "ISBN": "978-3-540-04758-2 978-3-642-14394-6",
+    "accessed": {
+      "date-parts": [
+        [
+          2025,
+          1,
+          25
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Øksendal",
+        "given": "Bernt"
+      }
+    ],
+    "collection-title": "Universitext",
+    "id": "oksendalStochasticDifferentialEquations2003",
+    "issued": {
+      "date-parts": [
+        [
+          2003
+        ]
+      ]
+    },
+    "language": "en-US",
+    "publisher": "Springer Berlin Heidelberg",
+    "publisher-place": "Berlin, Heidelberg",
+    "title": "Stochastic Differential Equations",
+    "type": "book"
+  },
+  {
     "URL": "https://arxiv.org/abs/1807.03748",
     "abstract": "While supervised learning has enabled great progress in many applications, unsupervised learning has not seen such widespread adoption, and remains an important and challenging endeavor for artificial intelligence. In this work, we propose a universal unsupervised learning approach to extract useful representations from high-dimensional data, which we call Contrastive Predictive Coding. The key insight of our model is to learn such representations by predicting the future in latent space by using powerful autoregressive models. We use a probabilistic contrastive loss which induces the latent space to capture information that is maximally useful to predict future samples. It also makes the model tractable by using negative sampling. While most prior work has focused on evaluating representations for a particular modality, we demonstrate that our approach is able to learn useful representations achieving strong performance on four distinct domains: speech, images, text and reinforcement learning in 3D environments.",
     "accessed": {
@@ -2879,6 +2989,101 @@
     "type": ""
   },
   {
+    "DOI": "10.48550/arXiv.1911.09101",
+    "URL": "https://arxiv.org/abs/1911.09101",
+    "abstract": "In this paper, we study the design of controllers in the context of stochastic optimal control under the assumption that the model of the system is not available. This is, we aim to control a Markov Decision Process (MDP) of which we do not know the transition probabilities, but we have access to sample trajectories through experience. We define safety as the agent remaining in a desired safe set with high probability during the operation time. The drawbacks of this formulation are twofold. The problem is non-convex and computing the gradients of the constraints with respect to the policies is prohibitive. Hence, we propose an ergodic relaxation of the constraints with the following advantages. (i) The safety guarantees are maintained in the case of episodic tasks and they hold until a given time horizon for continuing tasks. (ii) The constrained optimization problem despite its non-convexity has arbitrarily small duality gap if the parametrization of the controller is rich enough. (iii) The gradients of the Lagrangian associated to the safe learning problem can be computed using standard Reinforcement Learning (RL) results and stochastic approximation tools. Leveraging these advantages, we exploit primal-dual algorithms to find policies that are safe and optimal. We test the proposed approach in a navigation task in a continuous domain. The numerical results show that our algorithm is capable of dynamically adapting the policy to the environment and the required safety levels.",
+    "accessed": {
+      "date-parts": [
+        [
+          2025,
+          1,
+          27
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Paternain",
+        "given": "Santiago"
+      },
+      {
+        "family": "Calvo-Fullana",
+        "given": "Miguel"
+      },
+      {
+        "family": "Chamon",
+        "given": "Luiz F. O."
+      },
+      {
+        "family": "Ribeiro",
+        "given": "Alejandro"
+      }
+    ],
+    "id": "paternainSafePoliciesReinforcement2022",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          1
+        ]
+      ]
+    },
+    "keyword": "Computer Science - Machine Learning,Computer Science - Systems and Control,Electrical Engineering and Systems Science - Systems and Control,Mathematics - Optimization and Control",
+    "language": "en-US",
+    "number": "arXiv:1911.09101",
+    "publisher": "arXiv",
+    "title": "Safe Policies for Reinforcement Learning via Primal-Dual Methods",
+    "type": ""
+  },
+  {
+    "DOI": "10.1007/978-1-4613-0003-8",
+    "ISBN": "978-1-4612-6526-9 978-1-4613-0003-8",
+    "accessed": {
+      "date-parts": [
+        [
+          2025,
+          1,
+          25
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Perko",
+        "given": "Lawrence"
+      }
+    ],
+    "collection-title": "Texts in Applied Mathematics",
+    "editor": [
+      {
+        "family": "Marsden",
+        "given": "J. E."
+      },
+      {
+        "family": "Sirovich",
+        "given": "L."
+      },
+      {
+        "family": "Golubitsky",
+        "given": "M."
+      }
+    ],
+    "id": "perkoDifferentialEquationsDynamical2001",
+    "issued": {
+      "date-parts": [
+        [
+          2001
+        ]
+      ]
+    },
+    "language": "en-US",
+    "publisher": "Springer New York",
+    "publisher-place": "New York, NY",
+    "title": "Differential Equations and Dynamical Systems",
+    "type": "book",
+    "volume": "7"
+  },
+  {
     "DOI": "10.48550/arXiv.2406.05534",
     "URL": "https://arxiv.org/abs/2406.05534",
     "abstract": "Direct Preference Optimization (DPO) improves the alignment of large language models (LLMs) with human values by training directly on human preference datasets, eliminating the need for reward models. However, due to the presence of cross-domain human preferences, direct continual training can lead to catastrophic forgetting, limiting DPO’s performance and efficiency. Inspired by intraspecific competition driving species evolution, we propose a Online Fast-Slow chasing DPO (OFS-DPO) for preference alignment, simulating competition through fast and slow chasing among models to facilitate rapid adaptation. Specifically, we first derive the regret upper bound for online learning, validating our motivation with a min-max optimization pattern. Based on this, we introduce two identical modules using Low-rank Adaptive (LoRA) with different optimization speeds to simulate intraspecific competition, and propose a new regularization term to guide their learning. To further mitigate catastrophic forgetting in cross-domain scenarios, we extend the OFS-DPO with LoRA modules combination strategy, resulting in the Cross domain Online Fast-Slow chasing DPO (COFS-DPO). This method leverages linear combinations of fast modules parameters from different task domains, fully utilizing historical information to achive continual value alignment. Experimental results show that OFS-DPO outperforms DPO in in-domain alignment, while COFS-DPO excels in cross-domain continual learning scenarios.",
@@ -2929,9 +3134,26 @@
     "keyword": "Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning",
     "number": "arXiv:2406.05534",
     "publisher": "arXiv",
-    "title": "Online DPO: Online Direct Preference Optimization with  Fast-Slow Chasing",
+    "title": "Online DPO: Online Direct Preference Optimization with Fast-Slow Chasing",
     "title-short": "Online DPO",
     "type": ""
+  },
+  {
+    "abstract": "To accelerate the training of kernel machines, we propose to map the input data to a randomized low-dimensional feature space and then apply existing fast linear methods. The features are designed so that the inner products of the transformed data are approximately equal to those in the feature space of a user specified shiftinvariant kernel. We explore two sets of random features, provide convergence bounds on their ability to approximate various radial basis kernels, and show that in large-scale classification and regression tasks linear machine learning algorithms applied to these features outperform state-of-the-art large-scale kernel machines.",
+    "author": [
+      {
+        "family": "Rahimi",
+        "given": "Ali"
+      },
+      {
+        "family": "Recht",
+        "given": "Benjamin"
+      }
+    ],
+    "id": "rahimiRandomFeaturesLargeScale",
+    "language": "en-US",
+    "title": "Random Features for Large-Scale Kernel Machines",
+    "type": "article-journal"
   },
   {
     "URL": "https://arxiv.org/abs/1910.02054",
@@ -2972,7 +3194,7 @@
         ]
       ]
     },
-    "keyword": "Computer Science - Distributed Parallel and Cluster Computing, Computer Science - Machine Learning,Statistics - Machine Learning",
+    "keyword": "Computer Science - Distributed Parallel and Cluster Computing,Computer Science - Machine Learning,Statistics - Machine Learning",
     "language": "en-US",
     "number": "arXiv:1910.02054",
     "publisher": "arXiv",
@@ -2983,7 +3205,7 @@
   {
     "DOI": "10.48550/arXiv.2108.02827",
     "URL": "https://arxiv.org/abs/2108.02827",
-    "abstract": "Watkins’ and Dayan’s Q-learning is a model-free reinforcement learning algorithm that iteratively refines an estimate for the optimal action-value function of an MDP by stochastically \"visiting \" many state-ation pairs [Watkins and Dayan, 1992]. Variants of the algorithm lie at the heart of numerous recent state-of-the-art achievements in reinforcement learning, including the superhuman Atari-playing deep Q-network [Mnih et al., 2015]. The goal of this paper is to reproduce a precise and (nearly) self-contained proof that Q-learning converges. Much of the available literature leverages powerful theory to obtain highly generalizable results in this vein. However, this approach requires the reader to be familiar with and make many deep connections to different research areas. A student seeking to deepen their understand of Q-learning risks becoming caught in a vicious cycle of \"RL-learning Hell\". For this reason, we give a complete proof from start to finish using only one external result from the field of stochastic approximation , despite the fact that this minimal dependence on other results comes at the expense of some \"shininess\".",
+    "abstract": "Watkins’ and Dayan’s Q-learning is a model-free reinforcement learning algorithm that iteratively refines an estimate for the optimal action-value function of an MDP by stochastically \"visiting\" many state-ation pairs [Watkins and Dayan, 1992]. Variants of the algorithm lie at the heart of numerous recent state-of-the-art achievements in reinforcement learning, including the superhuman Atari-playing deep Q-network [Mnih et al., 2015]. The goal of this paper is to reproduce a precise and (nearly) self-contained proof that Q-learning converges. Much of the available literature leverages powerful theory to obtain highly generalizable results in this vein. However, this approach requires the reader to be familiar with and make many deep connections to different research areas. A student seeking to deepen their understand of Q-learning risks becoming caught in a vicious cycle of \"RL-learning Hell\". For this reason, we give a complete proof from start to finish using only one external result from the field of stochastic approximation, despite the fact that this minimal dependence on other results comes at the expense of some \"shininess\".",
     "accessed": {
       "date-parts": [
         [
@@ -3021,7 +3243,7 @@
   },
   {
     "URL": "https://arxiv.org/abs/2405.16359",
-    "abstract": "This is a concise mathematical introduction to Monte Carlo methods , a rich family of algorithms with far-reaching applications in science and engineering. Monte Carlo methods are an exciting subject for mathematical statisticians and computational and applied mathematicians: the design and analysis of modern algorithms are rooted in a broad mathematical toolbox that includes ergodic theory of Markov chains, Hamiltonian dynamical systems, transport maps, stochastic differential equations, information theory, optimization, Riemannian geometry, and gradient flows, among many others. These lecture notes celebrate the breadth of mathematical ideas that have led to tangible advancements in Monte Carlo methods and their applications. To accommodate a diverse audience, the level of mathematical rigor varies from chapter to chapter, giving only an intuitive treatment to the most technically demanding subjects. The aim is not to be comprehensive or encyclopedic, but rather to illustrate some key principles in the design and analysis of Monte Carlo methods through a carefully-crafted choice of topics that emphasizes timeless over timely ideas. Algorithms are presented in a way that is conducive to conceptual understanding and mathematical analysis – clarity and intuition are favored over state-of-the-art implementations that are harder to comprehend or rely on ad-hoc heuristics. To help readers navigate the expansive landscape of Monte Carlo methods, each algorithm is accompanied by a summary of its pros and cons, and by a discussion of the type of problems for which they are most useful. The presentation is self-contained, and therefore adequate for self-guided learning or as a teaching resource. Each chapter contains a section with bibliographic remarks that will be useful for those interested in conducting research on Monte Carlo methods and their applications.",
+    "abstract": "This is a concise mathematical introduction to Monte Carlo methods, a rich family of algorithms with far-reaching applications in science and engineering. Monte Carlo methods are an exciting subject for mathematical statisticians and computational and applied mathematicians: the design and analysis of modern algorithms are rooted in a broad mathematical toolbox that includes ergodic theory of Markov chains, Hamiltonian dynamical systems, transport maps, stochastic differential equations, information theory, optimization, Riemannian geometry, and gradient flows, among many others. These lecture notes celebrate the breadth of mathematical ideas that have led to tangible advancements in Monte Carlo methods and their applications. To accommodate a diverse audience, the level of mathematical rigor varies from chapter to chapter, giving only an intuitive treatment to the most technically demanding subjects. The aim is not to be comprehensive or encyclopedic, but rather to illustrate some key principles in the design and analysis of Monte Carlo methods through a carefully-crafted choice of topics that emphasizes timeless over timely ideas. Algorithms are presented in a way that is conducive to conceptual understanding and mathematical analysis – clarity and intuition are favored over state-of-the-art implementations that are harder to comprehend or rely on ad-hoc heuristics. To help readers navigate the expansive landscape of Monte Carlo methods, each algorithm is accompanied by a summary of its pros and cons, and by a discussion of the type of problems for which they are most useful. The presentation is self-contained, and therefore adequate for self-guided learning or as a teaching resource. Each chapter contains a section with bibliographic remarks that will be useful for those interested in conducting research on Monte Carlo methods and their applications.",
     "accessed": {
       "date-parts": [
         [
@@ -3059,7 +3281,7 @@
   },
   {
     "URL": "https://arxiv.org/abs/1909.08053",
-    "abstract": "Recent work in language modeling demonstrates that training large transformer models advances the state of the art in Natural Language Processing applications. However, very large models can be quite difficult to train due to memory constraints. In this work, we present our techniques for training very large transformer models and implement a simple, efficient intra-layer model parallel approach that enables training transformer models with billions of parameters. Our approach does not require a new compiler or library changes, is orthogonal and complimentary to pipeline model parallelism, and can be fully implemented with the insertion of a few communication operations in native PyTorch. We illustrate this approach by converging transformer based models up to 8.3 billion parameters using 512 GPUs. We sustain 15.1 PetaFLOPs across the entire application with 76% scaling efficiency when compared to a strong single GPU baseline that sustains 39 TeraFLOPs, which is 30 % of peak FLOPs. To demonstrate that large language models can further advance the state of the art (SOTA), we train an 8.3 billion parameter transformer language model similar to GPT-2 and a 3.9 billion parameter model similar to BERT. We show that careful attention to the placement of layer normalization in BERT-like models is critical to achieving increased performance as the model size grows. Using the GPT-2 model we achieve SOTA results on the WikiText103 (10.8 compared to SOTA perplexity of 15.8) and LAMBADA (66.5% compared to SOTA accuracy of 63.2%) datasets. Our BERT model achieves SOTA results on the RACE dataset (90.9% compared to SOTA accuracy of 89.4%).",
+    "abstract": "Recent work in language modeling demonstrates that training large transformer models advances the state of the art in Natural Language Processing applications. However, very large models can be quite difficult to train due to memory constraints. In this work, we present our techniques for training very large transformer models and implement a simple, efficient intra-layer model parallel approach that enables training transformer models with billions of parameters. Our approach does not require a new compiler or library changes, is orthogonal and complimentary to pipeline model parallelism, and can be fully implemented with the insertion of a few communication operations in native PyTorch. We illustrate this approach by converging transformer based models up to 8.3 billion parameters using 512 GPUs. We sustain 15.1 PetaFLOPs across the entire application with 76% scaling efficiency when compared to a strong single GPU baseline that sustains 39 TeraFLOPs, which is 30% of peak FLOPs. To demonstrate that large language models can further advance the state of the art (SOTA), we train an 8.3 billion parameter transformer language model similar to GPT-2 and a 3.9 billion parameter model similar to BERT. We show that careful attention to the placement of layer normalization in BERT-like models is critical to achieving increased performance as the model size grows. Using the GPT-2 model we achieve SOTA results on the WikiText103 (10.8 compared to SOTA perplexity of 15.8) and LAMBADA (66.5% compared to SOTA accuracy of 63.2%) datasets. Our BERT model achieves SOTA results on the RACE dataset (90.9% compared to SOTA accuracy of 89.4%).",
     "accessed": {
       "date-parts": [
         [
@@ -3172,7 +3394,7 @@
   },
   {
     "URL": "https://arxiv.org/abs/2405.16236",
-    "abstract": "Modern large language model (LLM) alignment techniques rely on human feedback, but it is unclear whether the techniques fundamentally limit the capabilities of aligned LLMs. In particular , it is unclear whether it is possible to align (stronger) LLMs with superhuman capabilities with (weaker) human feedback without degrading their capabilities. This is an instance of the weak-to-strong generalization problem: using weaker (less capable) feedback to train a stronger (more capable) model. We prove that weak-to-strong generalization is possible by eliciting latent knowledge from pre-trained LLMs. In particular, we cast the weak-to-strong generalization problem as a transfer learning problem in which we wish to transfer a latent concept from a weak model to a strong pre-trained model. We prove that a naive fine-tuning approach suffers from fundamental limitations, but an alternative refinement-based approach suggested by the problem structure provably overcomes the limitations of fine-tuning. Finally, we demonstrate the practical applicability of the refinement approach in three LLM alignment tasks.",
+    "abstract": "Modern large language model (LLM) alignment techniques rely on human feedback, but it is unclear whether the techniques fundamentally limit the capabilities of aligned LLMs. In particular, it is unclear whether it is possible to align (stronger) LLMs with superhuman capabilities with (weaker) human feedback without degrading their capabilities. This is an instance of the weak-to-strong generalization problem: using weaker (less capable) feedback to train a stronger (more capable) model. We prove that weak-to-strong generalization is possible by eliciting latent knowledge from pre-trained LLMs. In particular, we cast the weak-to-strong generalization problem as a transfer learning problem in which we wish to transfer a latent concept from a weak model to a strong pre-trained model. We prove that a naive fine-tuning approach suffers from fundamental limitations, but an alternative refinement-based approach suggested by the problem structure provably overcomes the limitations of fine-tuning. Finally, we demonstrate the practical applicability of the refinement approach in three LLM alignment tasks.",
     "accessed": {
       "date-parts": [
         [
@@ -3258,13 +3480,13 @@
     },
     "language": "en-US",
     "publisher": "https://arxiv.org/abs/2202.09701v1",
-    "title": "A History of Meta-gradient: Gradient Methods for  Meta-learning",
+    "title": "A History of Meta-gradient: Gradient Methods for Meta-learning",
     "title-short": "A History of Meta-gradient",
     "type": ""
   },
   {
     "ISBN": "978-0-262-03924-6",
-    "abstract": "\"Reinforcement learning, one of the most active research areas in artificial intelligence, is a computational approach to learning whereby an agent tries to maximize the total amount of reward it receives while interacting with a complex, uncertain environment. In Reinforcement Learning, Richard Sutton and Andrew Barto provide a clear and simple account of the field’s key ideas and algorithms. \"–",
+    "abstract": "\"Reinforcement learning, one of the most active research areas in artificial intelligence, is a computational approach to learning whereby an agent tries to maximize the total amount of reward it receives while interacting with a complex, uncertain environment. In Reinforcement Learning, Richard Sutton and Andrew Barto provide a clear and simple account of the field’s key ideas and algorithms.\"–",
     "author": [
       {
         "family": "Sutton",
@@ -3484,7 +3706,7 @@
     "language": "en-US",
     "number": "arXiv:2203.15955",
     "publisher": "arXiv",
-    "title": "Investigating the Properties of Neural Network Representations  in Reinforcement Learning",
+    "title": "Investigating the Properties of Neural Network Representations in Reinforcement Learning",
     "type": ""
   },
   {
@@ -3523,7 +3745,7 @@
     "language": "en-US",
     "publisher": "Cambridge University Press",
     "title": "High-Dimensional Data Analysis with Low-Dimensional Models: Principles, Computation, and Applications",
-    "title-short": "High-Dimensional Data Analysis with Low-Dimensional Models ",
+    "title-short": "High-Dimensional Data Analysis with Low-Dimensional Models",
     "type": "book"
   },
   {
@@ -3612,6 +3834,43 @@
     "type": "paper-conference"
   },
   {
+    "abstract": "Safe reinforcement learning (RL) focuses on training reward-maximizing agents subject to pre-defined safety constraints. Yet, learning versatile safe policies that can adapt to varying safety constraint requirements during deployment without retraining remains a largely unexplored and challenging area. In this work, we formulate the versatile safe RL problem and consider two primary requirements: training efficiency and zero-shot adaptation capability. To address them, we introduce the Constraint-Conditioned Policy Optimization (CCPO) framework, consisting of two key modules: (1) Versatile Value Estimation (VVE) for approximating value functions under unseen threshold conditions, and (2) Conditioned Variational Inference (CVI) for encoding arbitrary constraint thresholds during policy optimization. Our extensive experiments demonstrate that CCPO outperforms the baselines in terms of safety and task performance, while preserving zero-shot adaptation capabilities to different constraint thresholds data-efficiently. This makes our approach suitable for real-world dynamic applications.",
+    "author": [
+      {
+        "family": "Yao",
+        "given": "Yihang"
+      },
+      {
+        "family": "Liu",
+        "given": "Zuxin"
+      },
+      {
+        "family": "Cen",
+        "given": "Zhepeng"
+      },
+      {
+        "family": "Zhu",
+        "given": "Jiacheng"
+      },
+      {
+        "family": "Yu",
+        "given": "Wenhao"
+      },
+      {
+        "family": "Zhang",
+        "given": "Tingnan"
+      },
+      {
+        "family": "Zhao",
+        "given": "Ding"
+      }
+    ],
+    "id": "yaoConstraintConditionedPolicyOptimization",
+    "language": "en-US",
+    "title": "Constraint-Conditioned Policy Optimization for Versatile Safe Reinforcement Learning",
+    "type": "article-journal"
+  },
+  {
     "DOI": "10.48550/arXiv.2402.11592",
     "URL": "https://arxiv.org/abs/2402.11592",
     "abstract": "In the evolving landscape of natural language processing (NLP), fine-tuning pre-trained Large Language Models (LLMs) with first-order (FO) optimizers like SGD and Adam has become standard. Yet, as LLMs grow {in size}, the substantial memory overhead from back-propagation (BP) for FO gradient computation presents a significant challenge. Addressing this issue is crucial, especially for applications like on-device training where memory efficiency is paramount. This paper proposes a shift towards BP-free, zeroth-order (ZO) optimization as a solution for reducing memory costs during LLM fine-tuning, building on the initial concept introduced by MeZO. Unlike traditional ZO-SGD methods, our work expands the exploration to a wider array of ZO optimization techniques, through a comprehensive, first-of-its-kind benchmarking study across five LLM families (Roberta, OPT, LLaMA, Vicuna, Mistral), three task complexities, and five fine-tuning schemes. Our study unveils previously overlooked optimization principles, highlighting the importance of task alignment, the role of the forward gradient method, and the balance between algorithm complexity and fine-tuning performance. We further introduce novel enhancements to ZO optimization, including block-wise descent, hybrid training, and gradient sparsity. Our study offers a promising direction for achieving further memory-efficient LLM fine-tuning. Codes to reproduce all our experiments are at https://github.com/ZO-Bench/ZO-LLM .",
@@ -3695,7 +3954,7 @@
     "type": ""
   },
   {
-    "abstract": "It is widely acknowledged that large models have the potential to deliver superior performance across a broad range of domains. Despite the remarkable progress made in the field of machine learning systems research, which has enabled the development and exploration of large models, such abilities remain confined to a small group of advanced users and industry leaders, resulting in an implicit technical barrier for the wider community to access and leverage these technologies. In this paper, we introduce PyTorch Fully Sharded Data Parallel (FSDP) as an industry-grade solution for large model training. FSDP has been closely co-designed with several key PyTorch core components including Tensor implementation , dispatcher system, and CUDA memory caching allocator, to provide non-intrusive user experiences and high training efficiency. Additionally, FSDP natively incorporates a range of techniques and settings to optimize resource utilization across a variety of hardware configurations. The experimental results demonstrate that FSDP is capable of achieving comparable performance to Distributed Data Parallel while providing support for significantly larger models with near-linear scalability in terms of TFLOPS.",
+    "abstract": "It is widely acknowledged that large models have the potential to deliver superior performance across a broad range of domains. Despite the remarkable progress made in the field of machine learning systems research, which has enabled the development and exploration of large models, such abilities remain confined to a small group of advanced users and industry leaders, resulting in an implicit technical barrier for the wider community to access and leverage these technologies. In this paper, we introduce PyTorch Fully Sharded Data Parallel (FSDP) as an industry-grade solution for large model training. FSDP has been closely co-designed with several key PyTorch core components including Tensor implementation, dispatcher system, and CUDA memory caching allocator, to provide non-intrusive user experiences and high training efficiency. Additionally, FSDP natively incorporates a range of techniques and settings to optimize resource utilization across a variety of hardware configurations. The experimental results demonstrate that FSDP is capable of achieving comparable performance to Distributed Data Parallel while providing support for significantly larger models with near-linear scalability in terms of TFLOPS.",
     "accessed": {
       "date-parts": [
         [
@@ -3798,7 +4057,7 @@
   {
     "DOI": "10.48550/arXiv.2310.20141",
     "URL": "https://arxiv.org/abs/2310.20141",
-    "abstract": "Predicting and reasoning about the future lie at the heart of many time-series questions. For example, goal-conditioned reinforcement learning can be viewed as learning representations to predict which states are likely to be visited in the future. While prior methods have used contrastive predictive coding to model time series data, learning representations that encode long-term dependencies usually requires large amounts of data. In this paper, we introduce a temporal difference version of contrastive predictive coding that stitches together pieces of different time series data to decrease the amount of data required to learn predictions of future events. We apply this representation learning method to derive an off-policy algorithm for goal-conditioned RL. Experiments demonstrate that, compared with prior RL methods, ours achieves $2 \\times$ median improvement in success rates and can better cope with stochastic environments. In tabular settings, we show that our method is about $20 \\times$ more sample efficient than the successor representation and $1500  \\times$ more sample efficient than the standard (Monte Carlo) version of contrastive predictive coding.",
+    "abstract": "Predicting and reasoning about the future lie at the heart of many time-series questions. For example, goal-conditioned reinforcement learning can be viewed as learning representations to predict which states are likely to be visited in the future. While prior methods have used contrastive predictive coding to model time series data, learning representations that encode long-term dependencies usually requires large amounts of data. In this paper, we introduce a temporal difference version of contrastive predictive coding that stitches together pieces of different time series data to decrease the amount of data required to learn predictions of future events. We apply this representation learning method to derive an off-policy algorithm for goal-conditioned RL. Experiments demonstrate that, compared with prior RL methods, ours achieves $2 \\times$ median improvement in success rates and can better cope with stochastic environments. In tabular settings, we show that our method is about $20 \\times$ more sample efficient than the successor representation and $1500 \\times$ more sample efficient than the standard (Monte Carlo) version of contrastive predictive coding.",
     "accessed": {
       "date-parts": [
         [
@@ -3840,7 +4099,7 @@
   {
     "DOI": "10.48550/arXiv.2410.23022",
     "URL": "https://arxiv.org/abs/2410.23022",
-    "abstract": "Automatically synthesizing dense rewards from natural language descriptions is a promising paradigm in reinforcement learning (RL) , with applications to sparse reward problems, open-ended exploration, and hierarchical skill design. Recent works have made promising steps by exploiting the prior knowledge of large language models (LLMs). However, these approaches suffer from important limitations: they are either not scalable to problems requiring billions of environment samples, due to requiring LLM annotations for each observation, or they require a diverse offline dataset, which may not exist or be impossible to collect. In this work, we address these limitations through a combination of algorithmic and systems-level contributions. We propose ONI, a distributed architecture that simultaneously learns an RL policy and an intrinsic reward function using LLM feedback. Our approach annotates the agent’s collected experience via an asynchronous LLM server, which is then distilled into an intrinsic reward model. We explore a range of algorithmic choices for reward modeling with varying complexity, including hashing, classification, and ranking models. By studying their relative tradeoffs, we shed light on questions regarding intrinsic reward design for sparse reward problems. Our approach achieves state-of-the-art performance across a range of challenging, sparse reward tasks from the NetHack Learning Environment in a simple unified process, solely using the agent’s gathered experience, without requiring external datasets. We make our code available at https://github.com/facebookresearch/oni.",
+    "abstract": "Automatically synthesizing dense rewards from natural language descriptions is a promising paradigm in reinforcement learning (RL), with applications to sparse reward problems, open-ended exploration, and hierarchical skill design. Recent works have made promising steps by exploiting the prior knowledge of large language models (LLMs). However, these approaches suffer from important limitations: they are either not scalable to problems requiring billions of environment samples, due to requiring LLM annotations for each observation, or they require a diverse offline dataset, which may not exist or be impossible to collect. In this work, we address these limitations through a combination of algorithmic and systems-level contributions. We propose ONI, a distributed architecture that simultaneously learns an RL policy and an intrinsic reward function using LLM feedback. Our approach annotates the agent’s collected experience via an asynchronous LLM server, which is then distilled into an intrinsic reward model. We explore a range of algorithmic choices for reward modeling with varying complexity, including hashing, classification, and ranking models. By studying their relative tradeoffs, we shed light on questions regarding intrinsic reward design for sparse reward problems. Our approach achieves state-of-the-art performance across a range of challenging, sparse reward tasks from the NetHack Learning Environment in a simple unified process, solely using the agent’s gathered experience, without requiring external datasets. We make our code available at https://github.com/facebookresearch/oni.",
     "accessed": {
       "date-parts": [
         [
@@ -3881,11 +4140,11 @@
         ]
       ]
     },
-    "keyword": "Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning, Computer Science - Robotics",
+    "keyword": "Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning,Computer Science - Robotics",
     "language": "en-US",
     "number": "arXiv:2410.23022",
     "publisher": "arXiv",
-    "title": "Online Intrinsic Rewards for Decision Making Agents from  Large Language Model Feedback",
+    "title": "Online Intrinsic Rewards for Decision Making Agents from Large Language Model Feedback",
     "type": ""
   },
   {

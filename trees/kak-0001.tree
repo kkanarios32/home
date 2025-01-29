@@ -63,10 +63,9 @@
 \subtree[meet]{
 \title{Wanna Talk?}
 \p{
-  I am currently interested in continual reinforcement learning or more specifically how to learn generalizable representations online. With this, I am currently looking into contrastive / zero-shot / hierarchical RL. If these things sound interesting I would love to talk about your research and potential collaboration opportunities. 
-}
+  I am currently interested in continual reinforcement learning or more specifically how to learn generalizable representations online. With this, I am currently looking into contrastive / zero-shot / hierarchical RL. If these things sound interesting I would love to talk about your research and potential collaboration opportunities.}
 \p{
-  Beyond research, I have a small list of #{\text{hobbies} \cup \text{interests} \supseteq \{\text{lifting}, \text{anime}, \text{NFL}, \text{basketball}\}}. If you are a student at [[umich]], I also have strong opinions / advice on courses.
+  Beyond research, I have a small list of ##{\text{hobbies} \cup \text{interests} \supseteq \{\text{lifting}, \text{anime}, \text{NFL}, \text{basketball}\}.} If you are a student at [[umich]], I also have strong opinions / advice on courses.
   \ul{
     \li{[Schedule a meeting](https://calendly.com/kellenkk-umich/30min)!}
   }

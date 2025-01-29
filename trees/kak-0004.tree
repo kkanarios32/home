@@ -9,6 +9,14 @@
 
 \transclude{kak-0003}
 
+\subtree[log]{
+  \title{Notebook}
+  \query{
+    \open\query
+    \tag{project}
+  }
+}
+
 \subtree{
   \title{Papers of a Week}
   \p{I am committing to reading (fairly rigorously) one paper a week. Here I will accumulate my notes and thoughts on each of these papers as I go.}
