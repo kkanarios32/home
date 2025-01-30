@@ -16,3 +16,10 @@
   \tag{texnote}
 }
 }
+
+\section{Previous Group Meeting Talks}{
+\query{
+  \open\query
+  \isect{\tag{group}}{\tag{talk}}
+}
+}
