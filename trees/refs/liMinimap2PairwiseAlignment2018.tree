@@ -3,7 +3,6 @@
 \date{2018-09}
 \author{Heng Li}
 \taxon{reference}
-\tag{bio}
 \meta{doi}{10.1093/bioinformatics/bty191}
 \meta{bibtex}{\startverb
 @article{liMinimap2PairwiseAlignment2018,

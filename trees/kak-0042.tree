@@ -1,0 +1,6 @@
+\date{2025-01-30}
+\title{Chapman-Kolmogorov Equation}
+\taxon{definition}
+\p{
+		##{p^{m + n}(x,y) = \sum_{z \in S} p^{m}(x,z) p^{n}(z,y)}.
+  }
