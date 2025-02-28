@@ -110,4 +110,44 @@
     \transclude{kak-003Q}
     \transclude{kak-003S}
   }
+
+}
+\section{Iterative Methods}{
+  \strong{Assume:}
+  \ul{
+      \li{#{f: \mathbb{R}^n \to \mathbb{R}} is a [[kak-004D]] and a [[kak-003K]].}
+      \li{The gradient #{\nabla f(\mathbf{x})} is [#{L}-Lipschitz](kak-003J).}
+    }
+  \section{Convergence of Gradient Descent}{
+  \transclude{kak-004L}
+  \transclude{kak-004M}
+  \transclude{kak-004N}
+  }
+  \section{Accelerated Gradient Descent}{
+\transclude{kak-004O}
+\transclude{kak-004P}
+    }
+  \section{Line Search}{
+\transclude{kak-004Q}
+\remark{Way to computationally expensive to use in practice.}
+    \transclude{kak-004R}
+    \transclude{kak-004S}
+    \remark{
+        Wolfe condition requires evaluating gradient of function each update to #{\tau_k}. However,  [[kak-004R]] only requires evaluating gradient once. Therefore, it is primarily used in practice.
+      }
+    \remark{
+        Backtracking is not used in optimizing DNNs because even function evaluation is very expensive.
+      }
+\transclude{kak-004T}
+    }
+  \section{How function properties affect convergence}{
+    \transclude{kak-004U}
+    \remark{
+        [[kak-0036]] is a sufficient but not necessary condition for linear convergene of gradient descent.
+      }
+    }
+  \section{Newton and Quasi-Newton Method}{
+\transclude{kak-004V}
+\transclude{kak-004W}
+  }
 }

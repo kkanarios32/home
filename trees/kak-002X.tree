@@ -27,7 +27,21 @@
     \title{Year 2025}
     \subtree{
       \title{January, 2025}
-      \mdblock{01-24-25}{
+      \mdblock{02/05/2025}{
+##{
+        \begin{array}{ccc}
+          \pi_1^{\mathrm{sub}} & \text{ sees } & (\phi_1(s_1), a_1), (\phi_1(s_2), a_2), (\phi_1(s_3), a_3), \ldots\\[.2cm]
+          \pi_2^{\mathrm{sub}} & \text{ sees } & (\phi_2(s_1), a_1), (\phi_2(s_2), a_2), (\phi_2(s_3), a_3), \ldots\\[.2cm]
+          \pi_3^{\mathrm{sub}} & \text{ sees } & (\phi_3(s_1), a_1), (\phi_3(s_2), a_2), (\phi_3(s_3), a_3), \ldots \\[.2cm]
+          \vdots & \vdots & \vdots
+          \end{array}
+        }
+##{
+          \pi(a\mid s) \triangleq\int\pi(a\mid s,s_{g})p^{\pi}(s_{g}\mid s)d s_{g}
+        }
+##{
+Q^{\pi}(s,a,s_{g})=p^{\pi(\cdot|\cdot)}(s_{t+}=s)\triangleq(1-\gamma)\sum_{t=0}^{\infty}\gamma^{t}p_{t}^{\pi(\cdot|\cdot)}(s_{t}=s)
+        }
       }
     }
   }

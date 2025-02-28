@@ -1,4 +1,5 @@
 \date{2024-10-29}
+\import{base-macros}
 \title{Blog}
 \author{kellenkanarios}
 \tag{top}
@@ -7,9 +8,17 @@
 
 \put\transclude/toc{false}
 \put\transclude/numbered{false}
+
+\scope{
 \put\transclude/metadata{true}
 \put\transclude/expanded{false}
-
-\transclude{kak-003Y}
 \transclude{kak-0005}
-\transclude{kak-003D}
+}
+  \hr
+\subtree[loading]{
+  \title{Coming Soon!!!}
+  \query{
+    \open\query
+    \isect{\tag{blog}}{\tag{upcoming}}
+  }
+}

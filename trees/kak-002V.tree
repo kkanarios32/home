@@ -8,6 +8,7 @@
   \title{Useful Resources}
   \ul{
     \li{[Accelerating Goal-Conditioned RL](https://github.com/MichalBortkiewicz/JaxGCRL)}
+    \li{[Safe RL baselines](https://github.com/chauncygu/Safe-Reinforcement-Learning-Baselines)}
   }
 }
 
@@ -51,6 +52,11 @@
         }
         Since in [[eysenbach2023]] they get away with "off-policy" #{Q} function for DDPG, I think it is good enough to start with #{\lambda_{\phi}(g, g')}.
       }
+      \mdblock{2025-02-05}{
+          ##{\pi(a | s, a, g) = \displaystyle\argmax_{a} Q(s, a, g)}
+          ##{\pi(a | s, a, \mathcal{O}) = \displaystyle\argmax_{a} Q(s, a, g) - \sum_{o \in \mathcal{O}} \lambda_o Q(s, a, o)}
+          ##{\pi(a | s, a, \mathcal{O}) = \displaystyle\argmax_{a} \log Q(s, a, g) - \sum_{o \in \mathcal{O}} \log(1 - Q(s, a, o))}
+        }
     }
   }
 }

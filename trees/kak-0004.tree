@@ -20,12 +20,11 @@
 }
 
 \subtree{
-  \title{Papers of a Week}
+  \title{Reading List}
   \p{I am committing to reading (fairly rigorously) one paper a week. Here I will accumulate my notes and thoughts on each of these papers as I go.}
   \query{
     \open\query
     \isect{\taxon{reference}}{
-    \tag{potw}
-    }
+    \tag{paper}}{\tag{todo}}
   }
 }
